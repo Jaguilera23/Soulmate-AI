@@ -4,7 +4,7 @@ import imagenes from '../../../assets/imagenes.js';
 const Img = () => {
     return (
         <div className=''>
-            <img src={imagenes.alejandra} alt="Alejandra" className='pt-9'/>
+            <img src={imagenes.alejandra} alt="Alejandra" className='max-h-screen max-w-screen-lg'/>
         </div>
         
     )
