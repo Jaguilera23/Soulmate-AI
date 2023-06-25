@@ -1,8 +1,10 @@
 
 
 import './App.css'
-import Header from './components/header/header';
-import Main from './components/main/main';
+import Header from './components/header/Header';
+import Body from './components/body/Body';
+import Footer from './components/footer/Footer';
+
 
 
 
@@ -13,7 +15,8 @@ function App() {
   return (
     <div>
       <Header/>
-      <Main />
+      <Body />
+      <Footer />
     </div>
     
   )

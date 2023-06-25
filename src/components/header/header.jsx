@@ -1,8 +1,7 @@
-import Logo from './nav-item/logo';
-import Cart from './nav-item/cart';
-import HamIcon from './nav-item/hamIcon';
-import ItemsCart from './nav-item/items-cart';
-import Navbar from './navbar/navbar';
+import Logo from './nav-item/Logo';
+import CartWidget from './nav-item/CartWidget';
+import HamIcon from './nav-item/HamIcon';
+import Navbar from './navbar/Navbar';
 
 
 const Header =()=> {
@@ -10,12 +9,10 @@ const Header =()=> {
         <header className="header flex justify-between py-10 px-10 items-center ">
             <a href="/" className='order-1'><Logo /></a>
             <div className='order-2 flex items-center space-x-11'>
-                <div ><Navbar linkA="ABOUT US" linkB="CONTACT"/></div>
+                <div ><Navbar linkA="ABOUT US" linkB="CHARACTERS" linkC="CONTACT"/></div>
                 <div className='order-last flex items-center'>
-                    <p className='pe-2.5'>SHOP CART</p>
                     <div className='flex items-end space-x-1'>
-                        <a href='/Cart'><Cart /></a>
-                        <ItemsCart  />
+                        <a href='/Cart'><CartWidget /></a>
                     </div>
                 </div>
             </div>
