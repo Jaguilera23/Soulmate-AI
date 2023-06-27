@@ -7,7 +7,7 @@ const Footer = () => {
 
     return(
 
-        <div className="font-Inter text-subtitlePurple mb-64 flex justify-between mx-24 w-[80rem]">
+        <div className="font-Inter text-subtitlePurple mb-64 flex justify-between mx-24  w-[80rem]">
             <div>
                 <Logo />
                 <p className="w-52 mt-5">Build and manage finances more structured</p>

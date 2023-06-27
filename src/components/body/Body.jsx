@@ -61,7 +61,7 @@ const Body = () => {
                 <ExampleMobile nombre="exampleMobile" />
             </div>
             <div className='flex  flex-col justify-center mt-8 items-center text-center mb-72'>
-                <h3 className='text-subtitlePurple text-5xl clash-regular mb-8 text-center w-2/4'>
+                <h3 className='text-subtitlePurple text-5xl clash-regular mb-28 text-center w-2/4'>
                     Texto  <span className='text-titlePurple'>simulado</span> que se <span className='text-titlePurple'>Subscriban</span> al boletin
                 </h3>
                 <Suscribe />
