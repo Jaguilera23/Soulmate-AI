@@ -1,18 +1,18 @@
 import { useState } from 'react';
 import Avatar from "../Avatares/Avatar";
 import imagenes from "../../assets/imagenes.js";
-import LikeButton from "../Buttons/LikeButton";
 import ButonShare from "../Buttons/ButtonShare";
 import ViewProfile from "../Buttons/ViewProfile";
 import Counter from "../Buttons/Counter";
 import "./Card.css"
+import LikeButton from '../buttons/LikeButton';
 
 
 
 
 const Card =({id,imageCard,price}) => {
     const [isHovered, setIsHovered] = useState(false);
-   
+
     return(
         <div key={id}>
             <div className={`w-[15.625rem] h-[23.75rem] bg-[transparent] rounded-3xl border-borderCard border flex  flex-col pt-3 relative card-hover  GradientBorder ${isHovered ? 'hovered' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >

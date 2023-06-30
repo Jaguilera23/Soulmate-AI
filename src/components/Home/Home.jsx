@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-
 
 import './Home.css';
 import HeadingTitle from '../HeadingTitle/HeadingTitle.jsx';
@@ -7,9 +5,9 @@ import ImgPrincipal from './principal-img-home/ImgPrincipal';
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import MostView from '../FilterMostView/MostView';
 import Sponsors from '../Sponsors/Sponsors';
-import TryNow from '../Buttons/TryNow';
 import ExampleMobile from './exampleMobile/ExampleMobile';
 import Suscribe from '../Suscribe/Suscribe';
+import TryNow from '../buttons/TryNow';
 
 
 const Home = () => {
@@ -52,7 +50,7 @@ const Home = () => {
             </div>
             <div className='flex flex-col justify-center items-center text-center mb-8'>
                 <h3 className='text-subtitlePurple text-5xl clash-regular mb-8 text-center w-2/4'>
-                    Let's try to manage your monthly <span className='text-titlePurple'>finances easily</span> on our platform
+                    Let`s try to manage your monthly <span className='text-titlePurple'>finances easily</span> on our platform
                 </h3>
                 <TryNow text="Try Now" />
             </div>
