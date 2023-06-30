@@ -1,0 +1,51 @@
+.card-hover{transition: all 0.4s ease-in-out;
+
+}
+
+
+.card-hover:hover{background-color: #101526;
+   
+    
+
+}
+
+
+    .GradientBorder {
+    position: relative;
+
+    }
+
+    .GradientBorder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:linear-gradient(180deg, #CDD4F0 0%, #9D67BA 47.40%, #4FCED6 100%);
+    z-index: -2;
+    filter: blur(14px);
+    opacity: 0;
+   
+ 
+    
+    
+    }
+
+    .GradientBorder.hovered::before {
+        transition: all 1s ease-out;
+    
+    opacity: 0.5;
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+    
+    }
+

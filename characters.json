@@ -1,0 +1,111 @@
+[
+    {
+    "id": "1",
+    "name": "Allie",
+    "age": "23",
+    "feature": "Loving",
+    "price": "120",
+    "imageCard": "./src/assets/avatars/allieCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarAllie.png"
+    },
+    {
+    "id": "2",
+    "name": "Ryan",
+    "age": "30",
+    "feature": "Toxic",
+    "price": "70",
+    "imageCard": "./src/assets/avatars/ryanCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarRyan.png"
+    },
+    {
+    "id": "3",
+    "name": "Jacob",
+    "age": "43",
+    "feature": "Funny",
+    "price": "60",
+    "imageCard": "./src/assets/avatars/jacobCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarJacob.png"
+    },
+    {
+    "id": "4",
+    "name": "Jossie",
+    "age": "55",
+    "feature": "Wise",
+    "price": "60",
+    "imageCard": "./src/assets/avatars/jossieCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarJossie.png"
+    },
+    {
+    "id": "5",
+    "name": "April",
+    "age": "50",
+    "feature": "Loving",
+    "price": "80",
+    "imageCard": "./src/assets/avatars/aprilCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarApril.png"
+    },
+    {
+    "id": "6",
+    "name": "Brad",
+    "age": "53",
+    "feature": "Jelous",
+    "price": "70",
+    "imageCard": "./src/assets/avatars/bradCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarBrad.png"
+    },
+    {
+    "id": "7",
+    "name": "Joshua",
+    "age": "32",
+    "feature": "Loving",
+    "price": "80",
+    "imageCard": "./src/assets/avatars/joshuaCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarJoshua.png"
+    },
+    {
+    "id": "8",
+    "name": "George",
+    "age": "38",
+    "feature": "Introverted",
+    "price": "90",
+    "imageCard": "./src/assets/avatars/georgeCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarGeorge.png"
+    },
+    {
+    "id": "9",
+    "name": "Tyalor",
+    "age": "24",
+    "feature": "Introverted",
+    "price": "100",
+    "imageCard": "./src/assets/avatars/taylorCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarTaylor.png"
+    },
+    {
+    "id": "10",
+    "name": "Nicole",
+    "age": "22",
+    "feature": "Funny",
+    "price": "120",
+    "imageCard": "./src/assets/avatars/nicoleCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarNicole.png"
+    },
+    {
+    "id": "11",
+    "name": "Denzel",
+    "age": "57",
+    "feature": "Wise",
+    "price": "75",
+    "imageCard": "./src/assets/avatars/denzelCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarDenzel.png"
+    },
+    {
+    "id": "12",
+    "name": "Jazmine",
+    "age": "40",
+    "feature": "Jelous",
+    "price": "50",
+    "imageCard": "./src/assets/avatars/jazmineCharacter.png",
+    "imageHome":"./src/assets/avatars/avatarJazmine.png"
+    }
+    
+]

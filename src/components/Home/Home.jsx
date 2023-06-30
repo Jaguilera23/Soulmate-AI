@@ -1,18 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 
 
-import './Body.css';
-import HeadingTitle from './headingTitle/HeadingTitle.jsx';
+import './Home.css';
+import HeadingTitle from '../HeadingTitle/HeadingTitle.jsx';
 import ImgPrincipal from './principal-img-home/ImgPrincipal';
-import ItemListContainer from './ItemListContainer/ItemListContainer'
-import MostView from './filterMostView/MostView';
-import Sponsors from './sponsors/Sponsors';
-import TryNow from './buttons-main/TryNow';
+import ItemListContainer from '../ItemListContainer/ItemListContainer'
+import MostView from '../FilterMostView/MostView';
+import Sponsors from '../Sponsors/Sponsors';
+import TryNow from '../Buttons/TryNow';
 import ExampleMobile from './exampleMobile/ExampleMobile';
-import Suscribe from './suscribe/Suscribe';
+import Suscribe from '../Suscribe/Suscribe';
 
 
-const Body = () => {
+const Home = () => {
     return (
         <section>
             <div className='flex justify-center  w-screen mt-40 mb-[70px]'>
@@ -24,8 +24,7 @@ const Body = () => {
             <div className='flex justify-center mt-[44px] mb-28'>
                 <p className='text-subtitlePurple font-Inter text-center w-8/12'> Find your perfect virtual partner or friend through our innovative platform. Experience meaningful connections with AI-powered personalities. Explore the world of Soulmate AI today.</p>
             </div>
-            <div className='w-9/12 ms-36 flex justify-between'>
-                <h2 className='clash-bold text-subtitlePurple text-3xl my-16 ps-24'>Characters</h2>
+            <div className='flex justify-center'>
                 <MostView />
             </div>
             <div className='flex justify-center mb-24'>
@@ -74,4 +73,4 @@ const Body = () => {
     )
 }
 
-export default Body;
+export default Home;

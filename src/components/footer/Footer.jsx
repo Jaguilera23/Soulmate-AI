@@ -1,4 +1,4 @@
-import Logo from "../header/nav-item/Logo";
+import Logo from "../Header/nav-item/Logo";
 import CompanyList from "./companyList/CompanyList";
 import HelpList from "./helpList/HelpList";
 import Download from "./Download/Download";
@@ -7,7 +7,7 @@ const Footer = () => {
 
     return(
 
-        <div className="font-Inter text-subtitlePurple mb-64 flex justify-between mx-24  w-[80rem]">
+        <div className="font-Inter text-subtitlePurple mb-64 flex justify-between mx-24  ">
             <div>
                 <Logo />
                 <p className="w-52 mt-5">Build and manage finances more structured</p>

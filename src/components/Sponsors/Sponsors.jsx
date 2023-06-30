@@ -1,4 +1,4 @@
-import svg from '../../../assets/svg.js';
+import svg from '../../assets/svg.js';
 
 const Sponsors = ({nombre}) => {
     return(

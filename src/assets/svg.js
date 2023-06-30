@@ -5,6 +5,10 @@ import velocity from './svg/velocity.svg';
 import ztos from './svg/ztos.svg';
 import google from './svg/googlePlay.svg';
 import apple from './svg/apple.svg';
+import next from './svg/next.svg';
+import cart from './svg/cart.svg';
+import minus from './svg/minus.svg';
+import plus from './svg/plus.svg';
 
 export default {
     'foxHub': foxHub,
@@ -14,4 +18,8 @@ export default {
     'ztos': ztos,
     'google': google,
     'apple': apple,
+    'next': next,
+    'cart': cart,
+    'minus': minus,
+    'plus': plus,
 }
