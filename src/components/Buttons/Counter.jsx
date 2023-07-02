@@ -15,7 +15,7 @@ const Counter = () => {
         };
 
     return (
-        <div className=' flex '>
+        <div className=' flex w-[80px]'>
             <button type="button" onClick={decrementCounter} className='border w-6 h-6 border-borderCard rounded flex items-center justify-center clash-regular' disabled={!isValidCounter} >
                 -
             </button>

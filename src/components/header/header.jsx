@@ -7,18 +7,18 @@ import Navbar from './navbar/Navbar';
 const Header =()=> {
     return (
         <header className="header flex justify-between py-10 px-10 items-center ">
-            <a href="/" className='order-1'><Logo /></a>
+            <div className='order-1 flex items-center '>
+                <HamIcon />
+                <a href="/" className='order-1 ps-1'><Logo /></a>
+            </div>
             <div className='order-2 flex items-center space-x-11'>
-                <div ><Navbar linkA="ABOUT US" linkB="CHARACTERS" linkC="CONTACT"/></div>
+                <div><Navbar linkA="About us" linkB="Characters" linkC="Contact"/></div>
                 <div className='order-last flex items-center'>
-                    <div className='flex items-end space-x-1'>
-                        <a href='/Cart'><CartWidget /></a>
-                    </div>
                 </div>
             </div>
-            <div className='order-3'>
-                    <HamIcon />
-            </div>
+            <di className="order-3 ">
+                <CartWidget />
+            </di>
         </header> 
     )
 }

@@ -1,6 +1,9 @@
+import imagenes from "../../../assets/imagenes";
+import svg from "../../../assets/svg";
+
 const Logo =() => {
     return(
-        <p className="text-base leading-5 tracking-tight font-light font-Inter ">SOULMATE AI</p>
+        <img src={svg.logo} alt="logo soulmate" />
         )
 }
 

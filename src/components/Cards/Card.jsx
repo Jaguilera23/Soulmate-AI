@@ -21,8 +21,8 @@ const Card =({id,imageCard,price}) => {
                     {isHovered && (<img src={imagenes.logoVoz} alt="" className="absolute top-36 w-40 h-40 animate-pulse  "/>)}
                 </div>    
                 <div className="ps-5 pt-6 flex ">
-                    <p className="font-Inter clash-regular me-12"><span className="clash text-titlePurple pe-1">Base Price</span>{price}$</p>
-                    <div>
+                    <p className="font-Inter clash-regular me-12 text-base"><span className="clash text-titlePurple pe-1">Base Price</span>{price}$</p>
+                    <div className='flex'>
                         <LikeButton />
                         <ButonShare />
                     </div>
