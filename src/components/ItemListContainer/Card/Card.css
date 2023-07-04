@@ -4,7 +4,7 @@
 
 
 .card-hover:hover{background-color: #101526;
-   
+
     
 
 }
@@ -26,8 +26,7 @@
     z-index: -2;
     filter: blur(14px);
     opacity: 0;
-   
- 
+
     
     
     }

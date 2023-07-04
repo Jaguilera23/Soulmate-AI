@@ -4,13 +4,13 @@ import imagenes from "../../../assets/imagenes.js";
 import ButonShare from "../../Buttons/ButtonShare";
 import ViewProfile from "../../Buttons/ViewProfile";
 import Counter from "../../Buttons/Counter";
-import "./ItemDetail.css"
+import "./Card.css"
 import LikeButton from '../../buttons/LikeButton';
 
 
 
 
-const ItemDetail =({id,imageCard,price}) => {
+const Card =({imageCard,price}) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return(
@@ -40,5 +40,5 @@ const ItemDetail =({id,imageCard,price}) => {
     )
 }
 
-export default ItemDetail;
+export default Card;
 

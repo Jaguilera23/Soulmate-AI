@@ -1,4 +1,4 @@
-const Avatar = ({id,imageHome,imageCard, clase }) => {
+const Avatar = ({imageHome,imageCard, clase }) => {
 
     const src = imageHome || imageCard
     

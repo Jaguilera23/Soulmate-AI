@@ -1,6 +1,7 @@
 
 import { useFetch } from '../Hooks/UseFetch'; 
 import Avatar from '../Avatares/Avatar';
+import Spinner from '../Spinner/Spinner';
 
 
 const Characters = () => {
@@ -10,6 +11,8 @@ const Characters = () => {
 
     return (
         <div className=' flex flex-wrap  w-[917px]'>
+            {loading && <Spinner />}
+            {error && <h1>error</h1>}
             {characters.map((character) => ( 
                 <Avatar key={character.id} {...character} />
             ))}

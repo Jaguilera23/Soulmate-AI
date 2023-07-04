@@ -18,13 +18,15 @@ export const useFetch =(url,config) => {
 
                 setTimeout(() => {
                     setCharacters(data);
-                }, 8000);
+                }, 2000);
             } 
             catch (error) {
                 setError(error.message)
             }
             finally {
+                setTimeout(() => {
                 setLoading(false);
+                }, 2000);
             }
         },
         [],
