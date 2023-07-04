@@ -1,20 +1,20 @@
 import { useState } from 'react';
-import Avatar from "../Avatares/Avatar";
-import imagenes from "../../assets/imagenes.js";
-import ButonShare from "../Buttons/ButtonShare";
-import ViewProfile from "../Buttons/ViewProfile";
-import Counter from "../Buttons/Counter";
-import "./Card.css"
-import LikeButton from '../buttons/LikeButton';
+import Avatar from "../../Avatares/Avatar";
+import imagenes from "../../../assets/imagenes.js";
+import ButonShare from "../../Buttons/ButtonShare";
+import ViewProfile from "../../Buttons/ViewProfile";
+import Counter from "../../Buttons/Counter";
+import "./ItemDetail.css"
+import LikeButton from '../../buttons/LikeButton';
 
 
 
 
-const Card =({id,imageCard,price}) => {
+const ItemDetail =({id,imageCard,price}) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return(
-        <div key={id}>
+        <div >
             <div className={`w-[15.625rem] h-[23.75rem] bg-[transparent] rounded-3xl border-borderCard border flex  flex-col pt-3 relative card-hover  GradientBorder ${isHovered ? 'hovered' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >
                 <div className=" flex justify-center ">
                     <Avatar imageCard={imageCard} clase="w-[12.9375rem] h-[12.6875rem] "/>
@@ -40,5 +40,5 @@ const Card =({id,imageCard,price}) => {
     )
 }
 
-export default Card;
+export default ItemDetail;
 

@@ -5,7 +5,7 @@ const Avatar = ({id,imageHome,imageCard, clase }) => {
     
 
     return (
-        <div className='flex justify-center items-center w-[220px] h-[220px] ' key={id}>
+        <div className='flex justify-center items-center w-[220px] h-[220px] '>
             <img src={src} alt="avatar imagen" className={clase}/>
         </div>
     );

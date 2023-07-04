@@ -1,5 +1,3 @@
-import CartWidget from "../nav-item/CartWidget";
-
 const Navbar = ({linkA,linkB,linkC}) => {
     return(
             <nav >

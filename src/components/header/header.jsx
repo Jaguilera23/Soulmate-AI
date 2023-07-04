@@ -12,13 +12,11 @@ const Header =()=> {
                 <a href="/" className='order-1 ps-1'><Logo /></a>
             </div>
             <div className='order-2 flex items-center space-x-11'>
-                <div><Navbar linkA="About us" linkB="Characters" linkC="Contact"/></div>
-                <div className='order-last flex items-center'>
-                </div>
+                <Navbar linkA="About us" linkB="Characters" linkC="Contact"/>
             </div>
-            <di className="order-3 ">
+            <div className="order-3 ">
                 <CartWidget />
-            </di>
+            </div>
         </header> 
     )
 }

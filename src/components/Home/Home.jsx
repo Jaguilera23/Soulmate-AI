@@ -2,7 +2,7 @@
 import './Home.css';
 import HeadingTitle from '../HeadingTitle/HeadingTitle.jsx';
 import ImgPrincipal from './principal-img-home/ImgPrincipal';
-import ItemListContainer from '../ItemListContainer/ItemListContainer'
+import Characters from '../Characters/Characters'
 import MostView from '../FilterMostView/MostView';
 import Sponsors from '../Sponsors/Sponsors';
 import ExampleMobile from './exampleMobile/ExampleMobile';
@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <section>
             <div className='flex justify-center  w-screen mt-40 mb-[70px]'>
-                <HeadingTitle subTitle1='Discover AI-generated' principalTitle='characters for virtual' subTitle2='companionship and friendship.'/>
+                <HeadingTitle subTitle1='Discover AI-generated' principalTitle='characters for virtual' subTitle2='companionship and friendship.' divClass='text-center'/>
             </div>
             <div className='w-screen  flex justify-center'>
                 <ImgPrincipal />
@@ -26,7 +26,7 @@ const Home = () => {
                 <MostView />
             </div>
             <div className='flex justify-center mb-24'>
-                <ItemListContainer />    
+                <Characters />    
             </div>
             <div className='mb-48'>
                 <h2 className='text-subtitlePurple clash text-7xl flex justify-center mb-11 text-trustedBlue'>TRUSTED 10,000+ COMPANY</h2>

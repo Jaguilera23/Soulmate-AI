@@ -1,0 +1,6 @@
+.customFocus{
+    outline: none;
+
+}
+.customFocus:focus{border:1px solid var(--primary-cdd-4-f-0, rgba(205, 212, 240, 0.20));
+} 

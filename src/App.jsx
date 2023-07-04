@@ -1,8 +1,10 @@
 import './App.css'
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
-import Characters from './components/Characters/Characaters';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Header from './components/header/header';
+import AboutUs from './components/AboutUs/AboutUs';
+import Contact from './components/Contact/Contact';
 
 
 
@@ -17,7 +19,9 @@ function App() {
     <div>
       <Header />
       <Home />
-      <Characters />
+      <ItemListContainer />
+      <AboutUs />
+      <Contact />
       <Footer />
     </div>
     

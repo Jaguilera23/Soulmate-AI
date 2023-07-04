@@ -1,4 +1,3 @@
-import imagenes from "../../../assets/imagenes";
 import svg from "../../../assets/svg";
 
 const Logo =() => {

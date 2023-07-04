@@ -3,7 +3,7 @@ import svg from '../../assets/svg.js';
 const Sponsors = ({nombre}) => {
     return(
         <div>
-            <li><img src={svg[nombre]} alt="sponsor imagen" /></li>
+            <img src={svg[nombre]} alt="sponsor imagen" />
         </div>
     )
 }
