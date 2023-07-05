@@ -1,12 +1,12 @@
 import HeadingTitle from "../HeadingTitle/HeadingTitle";
 import MostView from "../FilterMostView/MostView";
 import Card from "./Card/Card";
-import { useFetch } from '../Hooks/UseFetch';
+import { useFetch } from '../../Hooks/useFetch';
 import Spinner from "../Spinner/Spinner";
 
 const ItemListContainer =() => {
     
-    const{characters,loading,error} = useFetch('./characters.json');
+    const{characters,loading,error} = useFetch('/characters.json');
     
     return(
         <>

@@ -1,5 +1,5 @@
 
-import { useFetch } from '../Hooks/UseFetch'; 
+import { useFetch } from '../../Hooks/useFetch'; 
 import Avatar from '../Avatares/Avatar';
 import Spinner from '../Spinner/Spinner';
 

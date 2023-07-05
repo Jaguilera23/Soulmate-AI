@@ -5,6 +5,8 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import Header from './components/header/header';
 import AboutUs from './components/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact';
+import ItemDetail from './components/ItemDetail/ItemDetail';
+
 
 
 
@@ -19,12 +21,13 @@ function App() {
 
   return (
     <div>
-      <Header />
+      {/* <Header />
       <Home />
       <ItemListContainer />
       <AboutUs />
-      <Contact />
-      <Footer />
+      <Contact />  */}
+      <ItemDetail />
+      {/* <Footer /> */}
     </div>
     
   )
