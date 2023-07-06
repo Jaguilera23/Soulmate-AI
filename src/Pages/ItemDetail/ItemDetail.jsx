@@ -8,20 +8,17 @@ import { useParams } from "react-router-dom";
 
 const ItemDetail = () => {
     const{characterId} = useParams();
-    const url =`./characters.json/${characterId}`
+   
 
-    const { characters, loading, error } = useFetch(url);
+    const { characters, loading, error } = useFetch('/characters.json');
+    const selectedCharacter = characters.find((character) => character.id === characterId);
 
     return (
         <section className="">
             {loading && <Spinner />}
             {error && <h1>error</h1>}
             <div className="">
-                {characters.map((character) =>
-                    character.id === characterId ? (
-                    <Summary key={character.id} {...character} />
-                ) : null
-            )}
+                {selectedCharacter && <Summary key={selectedCharacter.id} {...selectedCharacter} />}
             </div>
         </section>
         )

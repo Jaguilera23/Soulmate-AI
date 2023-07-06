@@ -11,11 +11,11 @@ import {useNavigate} from 'react-router-dom';
 
 
 
-const Card =({imageCard,price}) => {
+const Card =({id,imageCard,price}) => {
     const [isHovered, setIsHovered] = useState(false);
     const navigate = useNavigate();
 
-    const onShowDetails = (id) => {
+    const onShowDetails = () => {
         navigate(`/ItemDetail/${id}`);
     
     }

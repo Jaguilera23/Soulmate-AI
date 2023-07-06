@@ -1,7 +1,7 @@
 import './App.css'
 import Footer from './components/Footer/Footer';
 import Header from './components/header/header';
-import { Route,Routes } from 'react-router-dom';
+import { Route,Routes,useLocation } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import AboutUs from './Pages/About/AboutUs';
 import ItemListContainer from './Pages/Characters/ItemListContainer';
@@ -22,9 +22,12 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 
 
+
 function App() {
   
+  const location = useLocation();
 
+  const isItemDetail=location.pathname.includes('/ItemDetail');/* verifica si la ruta actual es itemDetail */
 
 
   return (<>
@@ -39,12 +42,7 @@ function App() {
         <Route path='/Contact' element={<Contact />}/>
         <Route path='/ItemDetail/:characterId' element={<ItemDetail />}/>
       </Routes>
-      {/* <Home />
-      <ItemListContainer />
-      <AboutUs />
-      <Contact />  */}
-      {/* <ItemDetail /> */}
-      <Footer />
+      {!isItemDetail && <Footer />}
     </div>
     </>
   )

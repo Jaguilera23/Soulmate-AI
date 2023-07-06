@@ -16,7 +16,7 @@ const Characters = () => {
             {loading && <Spinner />}
             {error && <h1>error</h1>}
             {characters.map((character) => ( 
-                <Link to={"/ItemListContainer"} key={character.id}>
+                <Link to={`/ItemDetail/${character.id}`} key={character.id}>
                     <Avatar {...character} />
               </Link>
             ))}
