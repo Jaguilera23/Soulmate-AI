@@ -10,6 +10,7 @@ import cart from './svg/cart.svg';
 import minus from './svg/minus.svg';
 import plus from './svg/plus.svg';
 import logo from './svg/logo.svg';
+import gradienteSvg from './svg/gradienteDetail.svg';
 
 export default {
     'foxHub': foxHub,
@@ -24,4 +25,5 @@ export default {
     'minus': minus,
     'plus': plus,
     'logo': logo,
+    'gradienteSvg': gradienteSvg
 }

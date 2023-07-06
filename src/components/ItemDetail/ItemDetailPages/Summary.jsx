@@ -1,5 +1,5 @@
 
-import imagenes from "../../../assets/imagenes.js"
+import svg from "../../../assets/svg.js"
 import ButonShare from "../../Buttons/ButtonShare";
 import LikeButton from "../../buttons/LikeButton";
 import CartWidget from "../../header/nav-item/CartWidget";
@@ -19,7 +19,7 @@ const Summary = ({imageDetail,price,name}) => {
         <>
             <section className="flex justify-around items-center">
                 <div className=" order-2 relative flex mt-4">
-                    <img src={imagenes.gradiente} alt="" className=" absolute z-0 w-[39.021rem] h-[33.30325rem]  top-[140px] animate-pulse" />
+                    <img src={svg.gradienteSvg} alt="" className=" absolute z-0 w-[39.021rem] h-[33.30325rem]  top-[140px] animate-pulse " />
                     <ImageDetail imageDetail={imageDetail} className="absolute  z-10"/>
                 </div> 
                 <div className="flex flex-col order-1">
