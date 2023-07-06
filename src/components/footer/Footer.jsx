@@ -10,7 +10,7 @@ const Footer = () => {
 
         <div className="font-Inter text-subtitlePurple mb-64 flex justify-between mx-24  ">
             <div>
-                <Logo />
+                <a href="/" ><Logo /></a>
                 <p className="w-52 mt-5">Build and manage finances more structured</p>
                 <p className="mt-8">© Soul-Mate,inc 2023</p>
             </div>

@@ -1,8 +1,8 @@
-import HeadingTitle from "../HeadingTitle/HeadingTitle";
-import MostView from "../FilterMostView/MostView";
-import Card from "./Card/Card";
+import HeadingTitle from "../../components/HeadingTitle/HeadingTitle";
+import MostView from "../../components/FilterMostView/MostView";
+import Card from "../../components/Cards/Card";
 import { useFetch } from '../../Hooks/useFetch';
-import Spinner from "../Spinner/Spinner";
+import Spinner from "../../components/Spinner/Spinner";
 
 const ItemListContainer =() => {
     

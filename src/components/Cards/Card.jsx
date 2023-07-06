@@ -1,17 +1,24 @@
 import { useState } from 'react';
-import Avatar from "../../Avatares/Avatar";
-import imagenes from "../../../assets/imagenes.js";
-import ButonShare from "../../Buttons/ButtonShare";
-import ViewProfile from "../../Buttons/ViewProfile";
-import Counter from "../../Buttons/Counter";
+import Avatar from "../Avatares/Avatar";
+import imagenes from "../../assets/imagenes.js";
+import ButonShare from "../Buttons/ButtonShare";
+import ViewProfile from "../Buttons/ViewProfile";
+import Counter from "../Buttons/Counter";
 import "./Card.css"
-import LikeButton from '../../buttons/LikeButton';
+import LikeButton from '../buttons/LikeButton';
+import {useNavigate} from 'react-router-dom';
 
 
 
 
 const Card =({imageCard,price}) => {
     const [isHovered, setIsHovered] = useState(false);
+    const navigate = useNavigate();
+
+    const onShowDetails = (id) => {
+        navigate(`/ItemDetail/${id}`);
+    
+    }
 
     return(
         <div >
@@ -31,7 +38,7 @@ const Card =({imageCard,price}) => {
                     <Counter/>
                 </div>
                 <div className="flex justify-evenly  items-center">
-                    <ViewProfile text="View Profile" imagen="next"/>
+                    <ViewProfile text="View Profile" imagen="next" onShowDetails={onShowDetails} />
                     <ViewProfile text="Add to Cart" imagen="cart" clase="bg-bgButtonGray border-none"/>
                 </div>
             </div>

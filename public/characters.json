@@ -5,9 +5,9 @@
     "age": "23",
     "feature": "Loving",
     "price": "120",
-    "imageCard": "./src/assets/avatars/allieCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarAllie.png",
-    "imageDetail":"./src/assets/img/Allie.png"
+    "imageCard": "/src/assets/avatars/allieCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarAllie.png",
+    "imageDetail":"/src/assets/img/Allie.png"
     },
     {
     "id": "2",
@@ -15,9 +15,9 @@
     "age": "30",
     "feature": "Toxic",
     "price": "70",
-    "imageCard": "./src/assets/avatars/ryanCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarRyan.png",
-    "imageDetail":"./src/assets/img/Ryan.png"
+    "imageCard": "/src/assets/avatars/ryanCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarRyan.png",
+    "imageDetail":"/src/assets/img/Ryan.png"
     },
     {
     "id": "3",
@@ -25,9 +25,9 @@
     "age": "43",
     "feature": "Funny",
     "price": "60",
-    "imageCard": "./src/assets/avatars/jacobCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarJacob.png",
-    "imageDetail":"./src/assets/img/Jacob.png"
+    "imageCard": "/src/assets/avatars/jacobCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarJacob.png",
+    "imageDetail":"/src/assets/img/Jacob.png"
     },
     {
     "id": "4",
@@ -35,9 +35,9 @@
     "age": "55",
     "feature": "Wise",
     "price": "60",
-    "imageCard": "./src/assets/avatars/jossieCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarJossie.png",
-    "imageDetail":"./src/assets/img/Jossie.png"
+    "imageCard": "/src/assets/avatars/jossieCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarJossie.png",
+    "imageDetail":"/src/assets/img/Jossie.png"
     },
     {
     "id": "5",
@@ -45,9 +45,9 @@
     "age": "50",
     "feature": "Loving",
     "price": "80",
-    "imageCard": "./src/assets/avatars/aprilCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarApril.png",
-    "imageDetail":"./src/assets/img/April.png"
+    "imageCard": "/src/assets/avatars/aprilCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarApril.png",
+    "imageDetail":"/src/assets/img/April.png"
     },
     {
     "id": "6",
@@ -55,9 +55,9 @@
     "age": "53",
     "feature": "Jelous",
     "price": "70",
-    "imageCard": "./src/assets/avatars/bradCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarBrad.png",
-    "imageDetail":"./src/assets/img/Brad.png"
+    "imageCard": "/src/assets/avatars/bradCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarBrad.png",
+    "imageDetail":"/src/assets/img/Brad.png"
     },
     {
     "id": "7",
@@ -65,9 +65,9 @@
     "age": "32",
     "feature": "Loving",
     "price": "80",
-    "imageCard": "./src/assets/avatars/joshuaCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarJoshua.png",
-    "imageDetail":"./src/assets/img/Joshua.png"
+    "imageCard": "/src/assets/avatars/joshuaCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarJoshua.png",
+    "imageDetail":"/src/assets/img/Joshua.png"
     },
     {
     "id": "8",
@@ -75,9 +75,9 @@
     "age": "38",
     "feature": "Introverted",
     "price": "90",
-    "imageCard": "./src/assets/avatars/georgeCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarGeorge.png",
-    "imageDetail":"./src/assets/img/George.png"
+    "imageCard": "/src/assets/avatars/georgeCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarGeorge.png",
+    "imageDetail":"/src/assets/img/George.png"
     },
     {
     "id": "9",
@@ -85,9 +85,9 @@
     "age": "24",
     "feature": "Introverted",
     "price": "100",
-    "imageCard": "./src/assets/avatars/taylorCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarTaylor.png",
-    "imageDetail":"./src/assets/img/Taylor.png"
+    "imageCard": "/src/assets/avatars/taylorCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarTaylor.png",
+    "imageDetail":"/src/assets/img/Taylor.png"
     },
     {
     "id": "10",
@@ -95,9 +95,9 @@
     "age": "22",
     "feature": "Funny",
     "price": "120",
-    "imageCard": "./src/assets/avatars/nicoleCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarNicole.png",
-    "imageDetail":"./src/assets/img/Nicole.png"
+    "imageCard": "/src/assets/avatars/nicoleCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarNicole.png",
+    "imageDetail":"/src/assets/img/Nicole.png"
     },
     {
     "id": "11",
@@ -105,9 +105,9 @@
     "age": "57",
     "feature": "Wise",
     "price": "75",
-    "imageCard": "./src/assets/avatars/denzelCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarDenzel.png",
-    "imageDetail":"./src/assets/img/Denzel.png"
+    "imageCard": "/src/assets/avatars/denzelCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarDenzel.png",
+    "imageDetail":"/src/assets/img/Denzel.png"
     },
     {
     "id": "12",
@@ -115,9 +115,9 @@
     "age": "40",
     "feature": "Jelous",
     "price": "50",
-    "imageCard": "./src/assets/avatars/jazmineCharacter.png",
-    "imageHome":"./src/assets/avatars/avatarJazmine.png",
-    "imageDetail":"./src/assets/img/Jazmine.png"
+    "imageCard": "/src/assets/avatars/jazmineCharacter.png",
+    "imageHome":"/src/assets/avatars/avatarJazmine.png",
+    "imageDetail":"/src/assets/img/Jazmine.png"
     }
 
     

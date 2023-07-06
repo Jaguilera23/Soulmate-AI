@@ -1,11 +1,19 @@
 import './App.css'
-import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Header from './components/header/header';
-import AboutUs from './components/AboutUs/AboutUs';
-import Contact from './components/Contact/Contact';
-import ItemDetail from './components/ItemDetail/ItemDetail';
+import { Route,Routes } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import AboutUs from './Pages/About/AboutUs';
+import ItemListContainer from './Pages/Characters/ItemListContainer';
+import Contact from './Pages/Contact/Contact';
+import ItemDetail from './Pages/ItemDetail/ItemDetail';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+
+
+
+
+
+
 
 
 
@@ -19,17 +27,26 @@ function App() {
 
 
 
-  return (
+  return (<>
+  
+      <ScrollToTop />  
     <div>
-      {/* <Header />
-      <Home />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About"element={<AboutUs />} />
+        <Route path='/ItemListContainer' element={<ItemListContainer />}/>
+        <Route path='/Contact' element={<Contact />}/>
+        <Route path='/ItemDetail/:characterId' element={<ItemDetail />}/>
+      </Routes>
+      {/* <Home />
       <ItemListContainer />
       <AboutUs />
       <Contact />  */}
-      <ItemDetail />
-      {/* <Footer /> */}
+      {/* <ItemDetail /> */}
+      <Footer />
     </div>
-    
+    </>
   )
 }
 

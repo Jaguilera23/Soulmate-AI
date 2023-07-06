@@ -1,4 +1,4 @@
-import imagenes from '../../../assets/imagenes.js';
+import imagenes from '../../assets/imagenes.js';
 
 const ExampleMobile = ({nombre}) => {
     return (

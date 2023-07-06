@@ -1,6 +1,6 @@
 import './Contact.css';
-import HeadingTitle from "../HeadingTitle/HeadingTitle";
-import Suscribe from "../Suscribe/Suscribe";
+import HeadingTitle from "../../components/HeadingTitle/HeadingTitle";
+import Suscribe from "../../components/Suscribe/Suscribe";
 
 const Contact = () => {
 

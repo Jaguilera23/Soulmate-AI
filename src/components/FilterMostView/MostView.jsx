@@ -1,9 +1,10 @@
+import{Link} from 'react-router-dom';
 const MostView = () => {
     
 
     return (
             <div className='w-4/5  mb-12 flex justify-between'>
-                <h2 className='clash-bold text-subtitlePurple text-3xl my-16 '>Characters</h2>
+                <Link to="/ItemListContainer"><h2 className='clash-bold text-subtitlePurple text-3xl my-16 '>Characters</h2></Link>
                 <button className="flex items-center ">most view 
                     <span className="ms-2">
                         <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,6 +1,6 @@
-import HeadingTitle from "../HeadingTitle/HeadingTitle"
-import ExampleMobile from "../Home/exampleMobile/ExampleMobile"
-import Suscribe from "../Suscribe/Suscribe"
+import HeadingTitle from "../../components/HeadingTitle/HeadingTitle"
+import ExampleMobile from "../../components/Home/ExampleMobile"
+import Suscribe from "../../components/Suscribe/Suscribe"
 
 const AboutUs = () => {
     return (
