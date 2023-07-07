@@ -8,7 +8,7 @@ import ItemDetail from './Pages/ItemDetail/ItemDetail.jsx';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx';
 import Head from './components/Head/Head.jsx';
 import Landing from './Pages/Landing/Landing.jsx';
-import Footer from './components/Footer/Footer.jsx';
+import Footline from './components/Footline/Footline.jsx';
 import Contact from './Pages/Contact/Contact.jsx';
 
 
@@ -45,7 +45,7 @@ function App() {
         <Route path='/Contact' element={<Contact />}/>
         <Route path='/ItemDetail/:characterId' element={<ItemDetail />}/>
       </Routes>
-      {!isItemDetail && <Footer />}
+      {!isItemDetail && <Footline />}
     </div>
     </>
   )

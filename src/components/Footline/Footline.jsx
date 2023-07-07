@@ -5,7 +5,7 @@ import Download from "./Download/Download";
 import Logo from "../Head/nav-item/Logo";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footline = () => {
 
     return(
 
@@ -25,4 +25,4 @@ const Footer = () => {
 
 }
 
-export default Footer
+export default Footline
