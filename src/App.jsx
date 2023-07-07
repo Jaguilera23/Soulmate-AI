@@ -7,7 +7,7 @@ import ItemListContainer from './Pages/Characters/ItemListContainer.jsx';
 import ItemDetail from './Pages/ItemDetail/ItemDetail.jsx';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx';
 import Head from './components/Head/Head.jsx';
-import Home from './pages/Home/Home.jsx';
+import Landing from './Pages/Landing/Landing.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Contact from './Pages/Contact/Contact.jsx';
 
@@ -39,7 +39,7 @@ function App() {
     <div>
       <Head />  
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/About"element={<AboutUs />} />
         <Route path='/ItemListContainer' element={<ItemListContainer />}/>
         <Route path='/Contact' element={<Contact />}/>

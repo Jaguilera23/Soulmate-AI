@@ -1,5 +1,5 @@
 import HeadingTitle from "../../components/HeadingTitle/HeadingTitle"
-import ExampleMobile from "../../components/Home/ExampleMobile"
+import ExampleMobile from "../../components/ImagesHome/ExampleMobile"
 import Suscribe from "../../components/Suscribe/Suscribe"
 
 const AboutUs = () => {

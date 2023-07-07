@@ -1,5 +1,5 @@
 
-import './Home.css';
+import './Landing.css';
 import HeadingTitle from '../../components/HeadingTitle/HeadingTitle.jsx';
 import ImgPrincipal from '../../components/ImagesHome/ImgPrincipal';
 import Characters from '../../components/Characters/Characters'
@@ -10,7 +10,7 @@ import Suscribe from '../../components/Suscribe/Suscribe';
 import TryNow from '../../components/Buttons/TryNow'
 
 
-const Home = () => {
+const Landing = () => {
     return (
         <section>
             <div className='flex justify-center  w-screen mt-40 mb-[70px]'>
@@ -71,4 +71,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Landing;
