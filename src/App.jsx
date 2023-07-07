@@ -6,7 +6,7 @@ import ItemListContainer from './Pages/Characters/ItemListContainer';
 import Contact from './Pages/Contact/Contact';
 import ItemDetail from './Pages/ItemDetail/ItemDetail';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
 import Home from './Pages/Home/Home'
 
 
@@ -42,7 +42,7 @@ function App() {
         <Route path='/Contact' element={<Contact />}/>
         <Route path='/ItemDetail/:characterId' element={<ItemDetail />}/>
       </Routes>
-      {!isItemDetail && <Footer />}
+      {/* {!isItemDetail && <Footer />} */}
     </div>
     </>
   )
