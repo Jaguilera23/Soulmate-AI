@@ -6,7 +6,7 @@
     "feature": "Loving",
     "price": "120",
     "imageCard": "/assets/avatars/allieCharacter.png",
-    "imageHome":"/assets/avatars/avatarAllie.png",
+    "imageHome":"/marketplace-coder/src/assets/avatars/avatarAllie.png",
     "imageDetail":"/assets/img/Allie.webp"
     },
     {
