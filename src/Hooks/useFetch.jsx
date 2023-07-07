@@ -16,17 +16,17 @@ export const useFetch =(url,config) => {
                 const data = await response.json();
 
 
-                // setTimeout(() => {
+                setTimeout(() => {
                     setCharacters(data);
-                // }, 2000);
+                }, 2000);
             } 
             catch (error) {
                 setError(error.message)
             }
             finally {
-                // setTimeout(() => {
+                setTimeout(() => {
                 setLoading(false);
-                // }, 2000);
+                }, 2000);
             }
         },
         [],
