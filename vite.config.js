@@ -6,9 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     assetsDir: 'assets',
-    rollupOptions: {
-      external: 'NonExistingPath'
-    }
+    
 
   },
 });
