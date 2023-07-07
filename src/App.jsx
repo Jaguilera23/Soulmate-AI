@@ -1,13 +1,15 @@
 import './App.css'
 import { Route,Routes,useLocation } from 'react-router-dom';
-import Header from '../../marketplace-coder/src/components/Header/Header';
+
 import AboutUs from './Pages/About/AboutUs';
 import ItemListContainer from './Pages/Characters/ItemListContainer';
 import Contact from './Pages/Contact/Contact';
 import ItemDetail from './Pages/ItemDetail/ItemDetail';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Footer from './components/Footer/Footer';
-import Home from './Pages/Home/Home'
+import Header from './components/Header/Header';
+import Home from './pages/Home/Home';
+
 
 
 
