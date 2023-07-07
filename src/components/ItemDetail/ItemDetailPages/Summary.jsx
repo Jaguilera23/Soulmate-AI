@@ -1,9 +1,10 @@
 
 import svg from "../../../assets/svg.js"
-import ButonShare from "../../Buttons/ButtonShare";
-import LikeButton from "../../buttons/LikeButton";
-import CartWidget from "../../header/nav-item/CartWidget";
-import ImageDetail from "../ImageDetail";
+import ButonShare from "../../Buttons/ButtonShare.jsx";
+import CartWidget from "../../Header/nav-item/CartWidget.jsx";
+import LikeButton from "../../buttons/LikeButton.jsx";
+
+import ImageDetail from "../ImageDetail.jsx";
 import "./ItemDetail.css"
 
 
