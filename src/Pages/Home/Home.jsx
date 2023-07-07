@@ -7,7 +7,7 @@ import MostView from '../../components/FilterMostView/MostView';
 import Sponsors from '../../components/Sponsors/Sponsors';
 import ExampleMobile from '../../components/Home/ExampleMobile';
 import Suscribe from '../../components/Suscribe/Suscribe';
-import TryNow from '../../components/Buttons/TryNow';
+import TryNow from '../../components/Buttons/TryNow'
 
 
 const Home = () => {
