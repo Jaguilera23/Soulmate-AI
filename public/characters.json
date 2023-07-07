@@ -5,9 +5,9 @@
     "age": "23",
     "feature": "Loving",
     "price": "120",
-    "imageCard": "../src/assets/avatars/allieCharacter.png",
-    "imageHome":"../src/assets/avatars/avatarAllie.png",
-    "imageDetail":"../../marketplace-coder/src/assets/img/Allie.webp"
+    "imageCard": "/assets/avatars/allieCharacter.png",
+    "imageHome":"/assets/avatars/avatarAllie.png",
+    "imageDetail":"/assets/img/Allie.webp"
     },
     {
     "id": "2",
