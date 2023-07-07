@@ -5,7 +5,7 @@ import Navbar from './Navbar/Navbar';
 import { Link } from 'react-router-dom';
 
 
-const Header =()=> {
+const Head =()=> {
     return (
         <div className="header flex justify-between py-10 px-10 items-center ">
             <div className='order-1 flex items-center '>
@@ -22,4 +22,4 @@ const Header =()=> {
     )
 }
 
-export default Header;
+export default Head;

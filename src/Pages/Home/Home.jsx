@@ -1,11 +1,11 @@
 
 import './Home.css';
 import HeadingTitle from '../../components/HeadingTitle/HeadingTitle.jsx';
-import ImgPrincipal from '../../components/Home/ImgPrincipal';
+import ImgPrincipal from '../../components/ImgesHome/ImgPrincipal';
 import Characters from '../../components/Characters/Characters'
 import MostView from '../../components/FilterMostView/MostView';
 import Sponsors from '../../components/Sponsors/Sponsors';
-import ExampleMobile from '../../components/Home/ExampleMobile';
+import ExampleMobile from '../../components/ImgesHome/ExampleMobile';
 import Suscribe from '../../components/Suscribe/Suscribe';
 import TryNow from '../../../src/components/Buttons/TryNow'
 
