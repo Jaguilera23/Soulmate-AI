@@ -3,6 +3,7 @@ import CompanyList from "./companyList/CompanyList";
 import HelpList from "./helpList/HelpList";
 import Download from "./Download/Download";
 import Logo from "../Header/nav-item/Logo";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -10,7 +11,7 @@ const Footer = () => {
 
         <div className="font-Inter text-subtitlePurple mb-64 flex justify-between mx-24  ">
             <div>
-                <a href="/" ><Logo /></a>
+                <Link to="/" ><Logo /></Link>
                 <p className="w-52 mt-5">Build and manage finances more structured</p>
                 <p className="mt-8">© Soul-Mate,inc 2023</p>
             </div>
