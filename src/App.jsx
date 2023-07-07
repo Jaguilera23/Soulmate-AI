@@ -1,5 +1,5 @@
 import './App.css'
-import Footer from './components/Footer/Footer';
+
 import Header from './components/header/header';
 import { Route,Routes,useLocation } from 'react-router-dom';
 import Home from './pages/Home/Home';
@@ -8,6 +8,7 @@ import ItemListContainer from './Pages/Characters/ItemListContainer';
 import Contact from './Pages/Contact/Contact';
 import ItemDetail from './Pages/ItemDetail/ItemDetail';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Footer from './components/Footer/Footer';
 
 
 
