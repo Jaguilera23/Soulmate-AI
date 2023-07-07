@@ -7,7 +7,7 @@
     "price": "120",
     "imageCard": "./avatars/allieCharacter.png",
     "imageHome":"./avatars/avatarAllie.png",
-    "imageDetail":"./img/Allie.webp"
+    "imageDetail":"/img/Allie.webp"
     },
     {
     "id": "2",
@@ -17,7 +17,7 @@
     "price": "70",
     "imageCard": "./avatars/ryanCharacter.png",
     "imageHome":"./avatars/avatarRyan.png",
-    "imageDetail":"./img/Ryan.webp"
+    "imageDetail":"/img/Ryan.webp"
     },
     {
     "id": "3",
@@ -27,7 +27,7 @@
     "price": "60",
     "imageCard": "./avatars/jacobCharacter.png",
     "imageHome":"./avatars/avatarJacob.png",
-    "imageDetail":"./img/Jacob.webp"
+    "imageDetail":"/img/Jacob.webp"
     },
     {
     "id": "4",
@@ -37,7 +37,7 @@
     "price": "60",
     "imageCard": "./avatars/jossieCharacter.png",
     "imageHome":"./avatars/avatarJossie.png",
-    "imageDetail":"./img/Jossie.webp"
+    "imageDetail":"/img/Jossie.webp"
     },
     {
     "id": "5",
@@ -47,7 +47,7 @@
     "price": "80",
     "imageCard": "./avatars/aprilCharacter.png",
     "imageHome":"./avatars/avatarApril.png",
-    "imageDetail":"./img/April.webp"
+    "imageDetail":"/img/April.webp"
     },
     {
     "id": "6",
@@ -57,7 +57,7 @@
     "price": "70",
     "imageCard": "./avatars/bradCharacter.png",
     "imageHome":"./avatars/avatarBrad.png",
-    "imageDetail":"./img/Brad.webp"
+    "imageDetail":"/img/Brad.webp"
     },
     {
     "id": "7",
@@ -67,7 +67,7 @@
     "price": "80",
     "imageCard": "./avatars/joshuaCharacter.png",
     "imageHome":"./avatars/avatarJoshua.png",
-    "imageDetail":"./img/Joshua.webp"
+    "imageDetail":"/img/Joshua.webp"
     },
     {
     "id": "8",
@@ -77,7 +77,7 @@
     "price": "90",
     "imageCard": "./avatars/georgeCharacter.png",
     "imageHome":"./avatars/avatarGeorge.png",
-    "imageDetail":"./img/George.webp"
+    "imageDetail":"/img/George.webp"
     },
     {
     "id": "9",
@@ -87,7 +87,7 @@
     "price": "100",
     "imageCard": "./avatars/taylorCharacter.png",
     "imageHome":"./avatars/avatarTaylor.png",
-    "imageDetail":"./img/Taylor.webp"
+    "imageDetail":"/img/Taylor.webp"
     },
     {
     "id": "10",
@@ -97,7 +97,7 @@
     "price": "120",
     "imageCard": "./avatars/nicoleCharacter.png",
     "imageHome":"./avatars/avatarNicole.png",
-    "imageDetail":"./img/Nicole.webp"
+    "imageDetail":"/img/Nicole.webp"
     },
     {
     "id": "11",
@@ -107,7 +107,7 @@
     "price": "75",
     "imageCard": "./avatars/denzelCharacter.png",
     "imageHome":"./avatars/avatarDenzel.png",
-    "imageDetail":"./img/Denzel.webp"
+    "imageDetail":"/img/Denzel.webp"
     },
     {
     "id": "12",
@@ -117,7 +117,7 @@
     "price": "50",
     "imageCard": "./avatars/jazmineCharacter.png",
     "imageHome":"./avatars/avatarJazmine.png",
-    "imageDetail":"./img/Jazmine.webp"
+    "imageDetail":"/img/Jazmine.webp"
     }
 
     
