@@ -6,7 +6,7 @@ import ItemListContainer from './Pages/Characters/ItemListContainer.jsx';
 
 import ItemDetail from './Pages/ItemDetail/ItemDetail.jsx';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx';
-import Header from './components/Header/Header.jsx';
+import Head from './components/Head/Head.jsx';
 import Home from './pages/Home/Home.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Contact from './Pages/Contact/Contact.jsx';
@@ -37,7 +37,7 @@ function App() {
   
       <ScrollToTop />  
     <div>
-      <Header />
+      <Head />  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About"element={<AboutUs />} />

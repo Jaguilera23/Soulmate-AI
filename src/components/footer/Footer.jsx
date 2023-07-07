@@ -2,7 +2,7 @@
 import CompanyList from "./companyList/CompanyList";
 import HelpList from "./helpList/HelpList";
 import Download from "./Download/Download";
-import Logo from "../Header/nav-item/Logo";
+import Logo from "../Head/nav-item/Logo";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
