@@ -1,6 +1,6 @@
 import './App.css'
 import { Route,Routes,useLocation } from 'react-router-dom';
-import Header from './components/Header/Header';
+import Header from '../../marketplace-coder/src/components/Header/Header';
 import AboutUs from './Pages/About/AboutUs';
 import ItemListContainer from './Pages/Characters/ItemListContainer';
 import Contact from './Pages/Contact/Contact';
