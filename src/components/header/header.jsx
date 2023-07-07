@@ -1,13 +1,13 @@
 import Logo from './nav-item/Logo';
 import CartWidget from './nav-item/CartWidget';
 import HamIcon from './nav-item/HamIcon';
-import Navbar from './navbar/navbar';
+import Navbar from './Navbar/Navbar';
 import { Link } from 'react-router-dom';
 
 
 const Header =()=> {
     return (
-        <header className="header flex justify-between py-10 px-10 items-center ">
+        <div className="header flex justify-between py-10 px-10 items-center ">
             <div className='order-1 flex items-center '>
                 <HamIcon />
                 <Link to="/" className='order-1 ps-1'><Logo /></Link>
@@ -18,7 +18,7 @@ const Header =()=> {
             <div className="order-3 ">
                 <CartWidget text="View cart"/>
             </div>
-        </header> 
+        </div> 
     )
 }
 
