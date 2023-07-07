@@ -5,7 +5,7 @@ import ButonShare from "../Buttons/ButtonShare";
 import ViewProfile from "../Buttons/ViewProfile";
 import Counter from "../Buttons/Counter";
 import "./Card.css"
-import LikeButton from '../buttons/LikeButton';
+import LikeButton from '../Buttons/LikeButton';
 import {useNavigate} from 'react-router-dom';
 
 
