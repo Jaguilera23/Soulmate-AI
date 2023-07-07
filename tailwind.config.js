@@ -34,7 +34,7 @@ export default {
       },
       keyframes: {
         pulse: {
-           '0% ,100%': { opacity: '0.2' },
+          '0% ,100%': { opacity: '0.2' },
           '50%': { opacity: '01' },
 
 
