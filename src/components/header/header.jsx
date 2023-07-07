@@ -1,7 +1,7 @@
 import Logo from './nav-item/Logo';
 import CartWidget from './nav-item/CartWidget';
 import HamIcon from './nav-item/HamIcon';
-import Navbar from './navbar/Navbar';
+import Navbar from './navbar/navbar';
 import { Link } from 'react-router-dom';
 
 
