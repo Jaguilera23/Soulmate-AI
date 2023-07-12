@@ -3,9 +3,18 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
+    screens: {
+      'xs': '375px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',},
     extend: {
+
       fontSize: {
         'xxs': '0.625rem', 
       },
@@ -42,6 +51,8 @@ export default {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+],
   }
 

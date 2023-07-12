@@ -12,13 +12,13 @@ const Characters = () => {
     
 
     return (
-        <div className=' flex flex-wrap  w-[917px]'>
+        <div className=' flex  xs:justify-center  xs:flex-wrap   sm:w-[70rem]  xs:w-[21.80rem]  '>
             {loading && <Spinner />}
             {error && <h1>error</h1>}
             {characters.map((character) => ( 
                 <Link to={`/ItemDetail/${character.id}`} key={character.id}>
                     <Avatar {...character} />
-              </Link>
+                </Link>
             ))}
         </div>
     )

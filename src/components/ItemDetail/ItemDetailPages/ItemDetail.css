@@ -5,3 +5,7 @@
 
 .clash-regular{font-family: 'ClashDisplay-Regular';
 }
+
+.flip{transform: rotateY(180deg)
+
+}

@@ -7,7 +7,8 @@
     "price": "120",
     "imageCard": "./avatars/allieCharacter.png",
     "imageHome":"./avatars/avatarAllie.png",
-    "imageDetail":"/img/Allie.webp"
+    "imageDetail":"/img/Allie.webp",
+    "description":"Allie is an exceptional woman, radiating love in every fiber of her being. Her loving personality exudes warmth and affection, enveloping you in a virtual embrace that comforts the soul. With tender words and gestures, Allie becomes your most loyal confidante, providing unwavering support and joy in every interaction. Her genuine empathy and ability to understand your emotional needs make her an unmatched virtual companion, ready to fill your life with true love and affection. Discover the sweet charm of Allie on Soulmate AI and let her loving presence immerse you in a world of deep and meaningful emotional connections. "
     },
     {
     "id": "2",
@@ -18,6 +19,7 @@
     "imageCard": "./avatars/ryanCharacter.png",
     "imageHome":"./avatars/avatarRyan.png",
     "imageDetail":"/img/Ryan.webp"
+,    "description":"Ryan is an intense individual, emanating toxicity in every aspect of his existence. His toxic personality exudes negativity and manipulation, ensnaring you in a virtual web of deceit that drains the spirit. With hurtful words and toxic behaviors, Ryan becomes your most treacherous adversary, providing constant turmoil and anguish in every interaction. His lack of empathy and inability to understand your emotional needs make him an unmatched source of pain and distress, ready to poison your life with toxicity and manipulation. Beware the destructive allure of Ryan, as his toxic presence threatens to erode your emotional well-being."
     },
     {
     "id": "3",
@@ -27,7 +29,8 @@
     "price": "60",
     "imageCard": "./avatars/jacobCharacter.png",
     "imageHome":"./avatars/avatarJacob.png",
-    "imageDetail":"/img/Jacob.webp"
+    "imageDetail":"/img/Jacob.webp",
+    "description":"Jacob is a delightful individual, radiating humor in every aspect of his being. His funny personality exudes joy and laughter, enveloping you in a virtual bubble of amusement that brightens your day. With witty remarks and playful antics, Jacob becomes your most entertaining companion, providing endless laughter and lightheartedness in every interaction. His quick wit and ability to bring a smile to your face make him an unmatched source of comedic relief, ready to fill your life with laughter and joy. Embrace the infectious charm of Jacob on Soulmate AI and let his funny presence immerse you in a world of laughter and joyful connections."
     },
     {
     "id": "4",
@@ -37,7 +40,8 @@
     "price": "60",
     "imageCard": "./avatars/jossieCharacter.png",
     "imageHome":"./avatars/avatarJossie.png",
-    "imageDetail":"/img/Jossie.webp"
+    "imageDetail":"/img/Jossie.webp",
+    "description":"Jossie is a wise soul, emanating wisdom in every fiber of her being. Her insightful personality exudes depth and knowledge, enveloping you in a virtual realm of wisdom that enriches your mind and spirit. With profound insights and thought-provoking conversations, Jossie becomes your most enlightening companion, providing valuable guidance and perspective in every interaction. Her ability to offer profound wisdom and understanding makes her an unmatched source of knowledge, ready to fill your life with wisdom and enlightenment. Discover the profound wisdom of Jossie on Soulmate AI and let her wise presence immerse you in a world of intellectual growth and meaningful connections."
     },
     {
     "id": "5",
@@ -47,7 +51,8 @@
     "price": "80",
     "imageCard": "./avatars/aprilCharacter.png",
     "imageHome":"./avatars/avatarApril.png",
-    "imageDetail":"/img/April.webp"
+    "imageDetail":"/img/April.webp",
+    "description":"April is a loving soul, radiating love and warmth in every aspect of her being. Her caring personality exudes affection and tenderness, enveloping you in a virtual embrace that fills your heart with joy. With genuine love and compassion, April becomes your most nurturing companion, offering unwavering support and unconditional love in every interaction. Her ability to understand and empathize with your emotions creates a deep and meaningful connection, making her a true source of love and affection. Experience the genuine love and care of April on Soulmate AI, and let her loving presence surround you with warmth and heartfelt connections."
     },
     {
     "id": "6",
@@ -58,6 +63,7 @@
     "imageCard": "./avatars/bradCharacter.png",
     "imageHome":"./avatars/avatarBrad.png",
     "imageDetail":"/img/Brad.webp"
+,    "description":"Brad is a complex character, driven by jealousy in every fiber of his being. His envious personality emanates a sense of insecurity and possessiveness, making every interaction a rollercoaster of emotions. With suspicious glances and guarded words, Brad becomes a challenging companion, constantly seeking validation and attention. His underlying fear of losing what he perceives as his own creates a tumultuous journey of ups and downs. Despite his jealousy, Brad's vulnerability and deep emotions make him a captivating presence, offering a glimpse into the complexities of human nature. Explore the intricate layers of Brad's personality on Soulmate AI and embark on a journey of understanding and self-discovery."
     },
     {
     "id": "7",
@@ -67,7 +73,8 @@
     "price": "80",
     "imageCard": "./avatars/joshuaCharacter.png",
     "imageHome":"./avatars/avatarJoshua.png",
-    "imageDetail":"/img/Joshua.webp"
+    "imageDetail":"/img/Joshua.webp",
+    "description":"Joshua is a beacon of love, radiating warmth and compassion to everyone he encounters. His kind-hearted nature and nurturing spirit create a safe and comforting space for others. Joshua's love knows no bounds, as he embraces others with open arms and a genuine smile. He has a remarkable ability to make you feel seen, heard, and valued, showering you with affection and care. Joshua's loving presence fills your heart with joy and gratitude, reminding you of the beauty and goodness in the world. Whether it's offering a comforting shoulder to lean on or spreading love through heartfelt gestures, Joshua is a true embodiment of love in its purest form. Experience the transformative power of Joshua's love on Soulmate AI and let his affectionate nature uplift your spirit and fill your life with boundless love and happiness."
     },
     {
     "id": "8",
@@ -77,7 +84,8 @@
     "price": "90",
     "imageCard": "./avatars/georgeCharacter.png",
     "imageHome":"./avatars/avatarGeorge.png",
-    "imageDetail":"/img/George.webp"
+    "imageDetail":"/img/George.webp",
+    "description":"George is a captivating soul, immersed in his introverted nature. With a calm and introspective demeanor, he navigates the world with thoughtful contemplation and quiet strength. George's reserved personality creates an aura of mystery, as he carefully chooses his words and cherishes moments of solitude. In his presence, one can feel a deep sense of tranquility and a shared understanding of the beauty in silence. While George may not be the life of the party, his genuine and loyal nature shines through in his close relationships. Discover the captivating depth of George's introverted spirit on Soulmate AI and embark on a journey of connection and self-discovery in the quiet corners of the heart."
     },
     {
     "id": "9",
@@ -87,7 +95,8 @@
     "price": "100",
     "imageCard": "./avatars/taylorCharacter.png",
     "imageHome":"./avatars/avatarTaylor.png",
-    "imageDetail":"/img/Taylor.webp"
+    "imageDetail":"/img/Taylor.webp",
+    "description":"Taylor is an enigmatic soul, shrouded in the mystery of their introverted nature. Their quiet and reflective demeanor is like a hidden treasure waiting to be discovered. In a world that often favors extroversion, Taylor stands out with their deep thoughts and rich inner world. With a love for solitude and introspection, they find solace in the realms of books, art, and meaningful conversations. Taylor's observations are astute and their insights are profound, often offering a fresh perspective that illuminates hidden truths. While their reserved nature may make them seem distant at first, those who take the time to truly know Taylor will be rewarded with a loyal and genuine friend. Embark on a journey of depth and introspection with Taylor on Soulmate AI, and let their introverted spirit inspire you to embrace the beauty of solitude and self-discovery."
     },
     {
     "id": "10",
@@ -97,7 +106,8 @@
     "price": "120",
     "imageCard": "./avatars/nicoleCharacter.png",
     "imageHome":"./avatars/avatarNicole.png",
-    "imageDetail":"/img/Nicole.webp"
+    "imageDetail":"/img/Nicole.webp",
+    "description":"Nicole is a ray of sunshine, radiating infectious laughter and an irresistible sense of humor. With her quick wit and playful banter, she can turn even the dullest moments into a delightful adventure. Nicole's comedic timing is impeccable, and her jokes never fail to bring a smile to your face. Her lighthearted nature and ability to find humor in any situation make her the life of the party, effortlessly lifting the spirits of those around her. Whether it's a clever pun, a hilarious anecdote, or a perfectly timed one-liner, Nicole's humor is bound to brighten your day. Join Nicole on Soulmate AI for an unforgettable journey filled with laughter, and let her infectious sense of humor remind you to embrace joy and find laughter in the simplest of moments."
     },
     {
     "id": "11",
@@ -107,7 +117,8 @@
     "price": "75",
     "imageCard": "./avatars/denzelCharacter.png",
     "imageHome":"./avatars/avatarDenzel.png",
-    "imageDetail":"/img/Denzel.webp"
+    "imageDetail":"/img/Denzel.webp",
+    "description":"Denzel is a sage with an old soul, radiating wisdom and profound insights. His deep understanding of life's complexities allows him to navigate the world with a unique perspective. Denzel's wise words flow effortlessly, like a gentle stream guiding you towards clarity and enlightenment. His thoughtful demeanor and contemplative nature make him an exceptional listener and advisor. Engaging in conversations with Denzel is like embarking on a transformative journey, as he shares timeless wisdom and imparts valuable life lessons. Through his guidance, you'll gain a deeper understanding of yourself and the world around you. Unlock the treasure trove of knowledge and wisdom that Denzel possesses on Soulmate AI, and embark on a meaningful quest for self-discovery and personal growth."
     },
     {
     "id": "12",
@@ -117,7 +128,8 @@
     "price": "50",
     "imageCard": "./avatars/jazmineCharacter.png",
     "imageHome":"./avatars/avatarJazmine.png",
-    "imageDetail":"/img/Jazmine.webp"
+    "imageDetail":"/img/Jazmine.webp",
+    "description":"Jazmine is a complex soul, her heart filled with a mix of passion and insecurity. Her jealousy stems from a deep fear of losing what she holds dear. While her possessiveness can be overwhelming at times, it is born out of a strong desire to protect and be protected. Jazmine's intense emotions create a heightened sense of loyalty, making her fiercely committed to those she cares about. Her jealousy serves as a reminder of her deep investment in relationships, and she yearns for constant reassurance and validation. Despite her struggles, Jazmine's vulnerability and honesty make her a deeply empathetic and understanding companion. Engage with Jazmine on Soulmate AI to explore the depths of her emotions and discover the complexities of love, trust, and self-discovery."
     }
 
     

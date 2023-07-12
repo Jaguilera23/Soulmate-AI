@@ -1,6 +1,6 @@
 const CompanyList = ({item1,item2,item3,item4}) => {
     return (
-        <div>
+        <div className="xs:w-[7.3rem]  xs:me-20 ">
             <ul>
                 <a href="/"><li className="mb-6">Company</li></a>
                 <a href="/"><li className="mb-4">{item1}</li></a>

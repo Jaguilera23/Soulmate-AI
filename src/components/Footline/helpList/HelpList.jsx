@@ -1,6 +1,6 @@
 const HelpList = ({item1,item2,item3}) => {
     return (
-        <div>
+        <div className="xs:w-[7.3rem] ">
             <ul>
                 <li className="mb-6">Help Center</li>
                 <li className="mb-4">{item1}</li>

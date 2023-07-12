@@ -5,3 +5,8 @@
 
 .clash-regular{font-family: 'ClashDisplay-Regular';
 }
+
+@media(max-width: 768px){
+    .mediaSuscribe{display: none;
+    }
+}

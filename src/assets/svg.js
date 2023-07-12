@@ -11,6 +11,9 @@ import minus from './svg/minus.svg';
 import plus from './svg/plus.svg';
 import logo from './svg/logo.svg';
 import gradienteSvg from './svg/gradienteDetail.svg';
+import instagram from './svg/instagram.svg';
+import facebook from './svg/facebook.svg';
+import twitter from './svg/twitter.svg';
 
 export default {
     'foxHub': foxHub,
@@ -25,5 +28,8 @@ export default {
     'minus': minus,
     'plus': plus,
     'logo': logo,
-    'gradienteSvg': gradienteSvg
+    'gradienteSvg': gradienteSvg,
+    'instagram': instagram,
+    'facebook': facebook,
+    'twitter': twitter,
 }
