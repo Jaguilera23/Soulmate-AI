@@ -5,6 +5,7 @@ import HamIcon from './NavItem/HamIcon';
 import svg from "../../assets/svg";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Download from "../Footline/Download/Download";
 
 
 const Navbar =()=> {
@@ -42,7 +43,11 @@ const Navbar =()=> {
           <img src={svg.facebook} className="me-[0.94rem]" alt="" />
           <img src={svg.twitter} className="" alt="" />
         </div>
-        
+        <div className={` items-start   download hidden xs:text-xxs  ${isOpen && "open"}`}>
+          <Download additionalClass="xs:w-[4rem]  xs:mb-3"/>
+          <p className="w-52 mt-2 ">Build and manage finances more structured</p>
+          <p className="mt-2">© Soul-Mate,inc 2023</p>
+        </div>
       </div>
       
     </div>

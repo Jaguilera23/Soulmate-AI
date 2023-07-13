@@ -1,12 +1,12 @@
 import svg from "../../../assets/svg.js";
 
-const Download = () => {
+const Download = ({additionalClass}) => {
     return (
         <div>
-            <ul>
-                <li className="mb-6">Download</li>
-                <li className="mb-4"> <img src={svg.google}  alt="google imagen"/></li>
-                <li> <img src={svg.apple} alt="apple imagen" /></li>
+            <ul className={additionalClass}>
+                <li className={`mb-6 ${additionalClass}`}>Download</li>
+                <li className='mb-4' > <img src={svg.google}   alt="google imagen"/></li>
+                <li> <img src={svg.apple} alt="apple imagen"  /></li>
             </ul>
         </div>
     )

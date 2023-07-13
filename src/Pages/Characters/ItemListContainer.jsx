@@ -15,13 +15,13 @@ const ItemListContainer =() => {
                 <HeadingTitle subTitle1='Discover AI-generated' principalTitle='characters for virtual'  divClass='text-center'/>
             </h1>
             <section className="mt-32 mb-32">
-                <div className="flex justify-center">
+                <div className=" justify-center hidden lg:flex">
                     <MostView />
                 </div>
                 <section className="flex justify-center">
                     {loading && <Spinner />}
                     {error && <h1>error</h1>}
-                    <div className="grid gap-[2.06rem] grid-cols-4">
+                    <div className="grid gap-[2.06rem] lg:grid-cols-3 xl:grid-cols-4 xs:grid-cols-1 md:grid-cols-2 ">
                     
                         {characters.map((character) => ( 
                             <Card key={character.id}{...character} />

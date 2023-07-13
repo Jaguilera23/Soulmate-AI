@@ -71,16 +71,28 @@
 
 .rrss.open{
     display: flex;
-
-    
 }
+
+
 
 .nav_toggle.open{
     position: fixed;
     z-index: 900;
 }
 
+@media (max-width:724px){
+    .download.open{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
+        position: relative;
+        left:-15%;
+        bottom:-6.5%
+        
+    }
 
+}
 
 @media (max-width:1024px){
     
@@ -93,7 +105,7 @@
     .links.open{
        
         font-size: 2.25rem;
-        margin-top: 5rem;
+        margin-top: 2rem;
         
     }
 
@@ -104,5 +116,38 @@
     }
 
     }
+
     
+    @media (min-width: 359px) and (min-height: 660px) and (max-height: 801px) {
+    
+        .links.open{
+       
+            font-size: 1.3rem;
+            margin-top: 4rem;
+            
+        }
+
+        .hr.open{
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .download.open{
+            font-size:0.75rem;
+            width: 4.8rem;
+            left:-6rem;
+            
+        }
+
+        .download.open p{
+            
+            width: 12rem;
+            
+            
+        }
+    
+    
+    
+    
+    }    
 
