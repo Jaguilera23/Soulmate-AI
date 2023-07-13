@@ -57,9 +57,9 @@ const Landing = () => {
             <div className='mt-36'>
                 <ExampleMobile nombre="exampleMobile" />
             </div>
-            <div className='flex  flex-col justify-center mt-8 items-center text-center mb-72  mediaSuscribe'>
+            <div className='flex  flex-col justify-center mt-8 items-center text-center   mediaSuscribe'>
                 <h3 className='text-subtitlePurple text-5xl clash-regular mb-28 text-center w-2/4 md:block '>
-                    Texto  <span className='text-titlePurple'>simulado</span> que se <span className='text-titlePurple'>Subscriban</span> al boletin
+                Subscribe to the <span className='text-titlePurple'>Newsletter</span>
                 </h3>
                 <Suscribe />
             </div>

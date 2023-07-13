@@ -18,7 +18,7 @@ const Navbar =()=> {
   setIsOpen(false);
 };
   return (
-    <div className="navbar justify-between">
+    <div className="navbar justify-between mt-5">
       <div className="flex xs:ps-2 xs:pe-2 lg:ps-0 lg:pe-0 xs:w-screen xs:justify-between lg:w-fit">
         <div className={`nav-logo lg:order-2 xs:order-1 ${isOpen && "open"}`} >
           <Link to="/" onClick={closeMenu}><Logo /></Link>
