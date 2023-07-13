@@ -9,21 +9,16 @@ import "./ItemDetail.css"
 
 
 const Summary = ({imageDetail,price,name,description}) => {
- 
-    
 
-
-
-    
     return(
     
         <>
             <section className="flex justify-around items-center">
-                <div className=" order-2 relative flex mt-4">
+                <div className=" order-2 relative flex mt-4 lg:bottom-[-2.8rem] 2xl:bottom-[-14rem]">
                     <img src={svg.gradienteSvg} alt="" className=" absolute z-0 w-[39.021rem] h-[33.30325rem]  top-[140px] animate-pulse " />
-                    <img src={img.message1} alt="" className="absolute z-10 animate-bounce"/>
-                    <img src={img.message2} alt="" className="absolute z-10 top-52 right-0 animate-bounce"/>
-                    <img src={img.message3} alt="" className="absolute z-10 right-20 animate-bounce"/>
+                    <img src={img.message1} alt="" className="absolute z-10 "/>
+                    <img src={img.message2} alt="" className="absolute z-10 top-52 right-0 "/>
+                    <img src={img.message3} alt="" className="absolute z-10 right-20 "/>
                     <ImageDetail imageDetail={imageDetail} className=""/>
                 </div> 
                 <div className="flex flex-col order-1">

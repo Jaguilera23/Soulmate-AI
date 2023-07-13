@@ -19,7 +19,7 @@ const Landing = () => {
             <div className='w-screen  flex justify-center'>
                 <ImgPrincipal />
             </div>
-            <div className='flex justify-center mt-[44px] mb-28'>
+            <div className='flex justify-center mt-[44px] lg:mb-28 xs:mb-[6.25rem]'>
                 <p className='text-subtitlePurple xs:text-sm  md:text-xl  font-Inter text-center xs:w-[22rem] ] md:w-8/12 '> Find your perfect virtual partner or friend through our innovative platform. Experience meaningful connections with AI-powered personalities. Explore the world of Soulmate AI today.</p>
             </div>
             <div className='flex justify-center'>
