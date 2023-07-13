@@ -21,7 +21,7 @@ const ItemListContainer =() => {
                 <section className="flex justify-center">
                     {loading && <Spinner />}
                     {error && <h1>error</h1>}
-                    <div className="grid gap-[2.06rem] lg:grid-cols-3 xl:grid-cols-4 xs:grid-cols-1 md:grid-cols-2 ">
+                    <div className={`grid gap-[2.06rem] lg:grid-cols-3 xl:grid-cols-4 xs:grid-cols-1 sm:grid-cols-2 `}>
                     
                         {characters.map((character) => ( 
                             <Card key={character.id}{...character} />

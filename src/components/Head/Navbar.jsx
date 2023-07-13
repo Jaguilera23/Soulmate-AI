@@ -21,7 +21,7 @@ const Navbar =()=> {
     <div className="navbar justify-between">
       <div className="flex xs:ps-2 xs:pe-2 lg:ps-0 lg:pe-0 xs:w-screen xs:justify-between lg:w-fit">
         <div className={`nav-logo lg:order-2 xs:order-1 ${isOpen && "open"}`} >
-          <Link to="/" ><Logo /></Link>
+          <Link to="/" onClick={closeMenu}><Logo /></Link>
         </div>
         <div className={`nav_toggle lg:order-1 xs:order-1 z-50 ${isOpen && "open"}`} onClick={handleClick}>
           <HamIcon isOpen={isOpen} handleClick={handleClick} />

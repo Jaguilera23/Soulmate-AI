@@ -6,7 +6,7 @@ import Spinner from '../Spinner/Spinner';
 
 
 
-const Characters = () => {
+const Characters = ({claseContenedor}) => {
 
     const{characters,loading,error}=useFetch('/characters.json');
     
@@ -17,7 +17,7 @@ const Characters = () => {
             {error && <h1>error</h1>}
             {characters.map((character) => ( 
                 <Link to={`/ItemDetail/${character.id}`} key={character.id}>
-                    <Avatar {...character} />
+                    <Avatar {...character} claseContenedor={claseContenedor} />
                 </Link>
             ))}
         </div>

@@ -26,7 +26,7 @@ const Landing = () => {
                 <MostView />
             </div>
             <div className='flex justify-center mb-24'>
-                <Characters />    
+                <Characters claseContenedor="xs:w-[9rem]"/>    
             </div>
             <div className='mb-48'>
                 <h2 className='text-subtitlePurple clash xs:text-base md:text-5xl lg:text-7xl  flex justify-center mb-11 text-trustedBlue'>TRUSTED 10,000+ COMPANY</h2>
