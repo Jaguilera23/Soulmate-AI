@@ -29,12 +29,12 @@ export const useFetch =(url,config) => {
                 }, 2000);
             }
         },
-        [window],
+        
     )
 
     useEffect(() => {
         if (characters.length === 0) handelFetch()   
-    }, [window]);
+    }, []);
 
     return{
         characters,
