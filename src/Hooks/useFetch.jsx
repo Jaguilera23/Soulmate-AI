@@ -29,7 +29,7 @@ export const useFetch =(url,config) => {
                 }, 2000);
             }
         },
-        [],
+        [window],
     )
 
     useEffect(() => {

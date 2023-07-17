@@ -16,8 +16,8 @@ const Contact = () => {
                     </div>
                 <form action="" method="" className="flex flex-col 0 xs:mt-10 lg:mt-0">
                     <input type="email" name="email" placeholder="Email" className="  md:w-[33.4375rem] xs:w-[22rem] h-[5.125rem] border-borderCard  rounded-[1.3125rem] bg-bgForm ps-[1.94rem] placeholder-placeHolderColor font-Inter text-sm mb-[1.62rem] customFocus text-placeHolderColor" />
-                    <input type="text" placeholder="Subject" className="md:w-[33.4375rem] xs:w-[22rem] h-[5.125rem]  rounded-[1.3125rem] bg-bgForm ps-[1.94rem] placeholder-placeHolderColor font-Inter text-sm mb-[1.62rem] customFocus text-placeHolderColor" />
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message" className=" xs:w-[22rem] md:w-[33.4375rem] lg:w-full rounded-[1.3125rem] bg-bgForm ps-[1.94rem] pt-[1.44rem] placeholder-placeHolderColor font-Inter text-sm text-placeHolderColor customFocus"></textarea>
+                    <input type="text" placeholder="Subject" className="md:w-[33.4375rem] xs:w-[22rem] h-[5.125rem]  rounded-[1.3125rem]  border-borderCard bg-bgForm ps-[1.94rem] placeholder-placeHolderColor font-Inter text-sm mb-[1.62rem] customFocus text-placeHolderColor" />
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message" className=" xs:w-[22rem] md:w-[33.4375rem]  border-borderCard lg:w-full rounded-[1.3125rem] bg-bgForm ps-[1.94rem] pt-[1.44rem] placeholder-placeHolderColor font-Inter text-sm text-placeHolderColor customFocus"></textarea>
                 </form>
             </div>
             <div className='md:flex  flex-col justify-center md:mt-8 items-center text-center mb-72 hidden '>
