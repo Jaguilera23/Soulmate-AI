@@ -34,7 +34,7 @@ export const useFetch =(url,config) => {
 
     useEffect(() => {
         if (characters.length === 0) handelFetch()   
-    }, []);
+    }, [window]);
 
     return{
         characters,
