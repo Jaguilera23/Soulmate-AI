@@ -18,7 +18,7 @@ export const useFetch =(url,config) => {
 
                 setTimeout(() => {
                     setCharacters(data);
-                }, 2000);
+                }, 800);
             } 
             catch (error) {
                 setError(error.message)
@@ -26,11 +26,11 @@ export const useFetch =(url,config) => {
             finally {
                 setTimeout(() => {
                 setLoading(false);
-                }, 2000);
+                }, 800);
             }
         },
-        
-    )
+        [],
+    ) 
 
     useEffect(() => {
         if (characters.length === 0) handelFetch()   
@@ -41,5 +41,6 @@ export const useFetch =(url,config) => {
         loading,
         error,
     }
+
 
 }
