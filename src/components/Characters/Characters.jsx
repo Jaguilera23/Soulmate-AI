@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useFetch } from '../../Hooks/useFetch'; 
 import Avatar from '../Avatares/Avatar';
 import Spinner from '../Spinner/Spinner';
-import { useState } from 'react';
 import useFilters from '../../Hooks/useFilters';
 
 

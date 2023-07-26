@@ -4,16 +4,25 @@ import Card from "../../components/Cards/Card";
 import { useFetch } from '../../Hooks/useFetch';
 import Spinner from "../../components/Spinner/Spinner";
 import useFilters from "../../Hooks/useFilters";
+import {useContext, useEffect} from "react";
+import "./ItemListContainer.css"
+import { CartContext } from "../../context/cartContext";
 
 const ItemListContainer =() => {
     
     const{characters,loading,error} = useFetch('/characters.json');
-    
+    const { onAddToCart,setCharacters  } = useContext(CartContext);
     const {filterProducts} = useFilters();
-    
-    return(
+
+    useEffect(() => {
+        if (characters.length > 0){
+            setCharacters(characters);
+        }
+    }, [characters,setCharacters])
+
+
+        return(
         <>
-            
             <h1 className="mt-36">
                 <HeadingTitle subTitle1='Discover AI-generated' principalTitle='characters for virtual'  divClass='text-center'/>
             </h1>
@@ -27,7 +36,7 @@ const ItemListContainer =() => {
                     <div className={`grid gap-[2.06rem] lg:grid-cols-3 xl:grid-cols-4 xs:grid-cols-1 sm:grid-cols-2 `}>
                     
                         {filterProducts(characters).map((character) => ( 
-                            <Card key={character.id}{...character} />
+                            <Card key={character.id}{...character} onAddToCart={() => onAddToCart(character.id)}/>
                         ))}
                     </div>
                 </section>

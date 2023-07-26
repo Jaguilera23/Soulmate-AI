@@ -1,15 +1,24 @@
 import img from "../../../assets/imagenes.js";
 import svg from "../../../assets/svg.js"
 import ButonShare from "../../Buttons/ButtonShare.jsx";
-import CartWidget from "../../Head/NavItem/CartWidget.jsx";
-import LikeButton from "../../Buttons/LikeButton.jsx";
 
+import LikeButton from "../../Buttons/LikeButton.jsx";
+import {useContext } from "react";
 import ImageDetail from "../ImageDetail.jsx";
 import "./ItemDetail.css"
+import { CartContext } from "../../../context/cartContext.jsx";
+import AddToCart from "../../Buttons/AddToCart.jsx";
 
 
-const Summary = ({imageDetail,price,name,description}) => {
+const Summary = ({imageDetail,price,name,description, selectedCharacter }) => {
+    
+    
+    const {onAddToCart} = useContext(CartContext);
 
+        
+
+    
+  
     return(
     
         <>
@@ -35,7 +44,7 @@ const Summary = ({imageDetail,price,name,description}) => {
                         <h1 className="clash text-subtitlePurple text-6xl pe-2">{price}<span className="text-4xl ps-1">$</span> </h1>
                         <p className="font-Inter text-xs text-subtitlePurple">Per/Month</p>
                     </div>
-                    <CartWidget text="Add To Cart" additionalClass="hidden"/>
+                    <AddToCart text="Add to Cart" imagen="cart" clase="bg-bgButtonGray border-none" onAddToCart={() => onAddToCart(selectedCharacter.id)} />
                     
                 </div>
             </section>

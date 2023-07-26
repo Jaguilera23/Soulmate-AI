@@ -3,17 +3,20 @@ import Avatar from "../Avatares/Avatar";
 import imagenes from "../../assets/imagenes.js";
 import ButonShare from "../Buttons/ButtonShare";
 import ViewProfile from "../Buttons/ViewProfile";
-import Counter from "../Buttons/Counter";
 import "./Card.css"
 import LikeButton from '../Buttons/LikeButton';
 import {useNavigate} from 'react-router-dom';
+import AddToCart from '../Buttons/AddToCart';
 
 
 
 
-const Card =({id,imageCard,price}) => {
+
+const Card =({id,imageCard,price,onAddToCart}) => {
     const [isHovered, setIsHovered] = useState(false);
     const navigate = useNavigate();
+    
+
 
     const onShowDetails = () => {
         navigate(`/ItemDetail/${id}`);
@@ -27,25 +30,23 @@ const Card =({id,imageCard,price}) => {
                     <Avatar imageCard={imageCard} clase="w-[12.9375rem] h-[12.6875rem]  "/>
                     {isHovered && (<img src={imagenes.logoVoz} alt="" className="absolute top-36 w-40 h-40 animate-pulse "/>)}
                 </div>    
-                <div className="ps-5 pt-6 flex ">
+                <div className="ps-5 pt-6 flex pb-9">
                     <p className="font-Inter clash-regular me-12 text-base"><span className="clash text-titlePurple pe-1">Base Price</span>{price}$</p>
                     <div className='flex'>
                         <LikeButton />
                         <ButonShare />
                     </div>
                 </div>
-                <div className="ps-5 pt-1 pb-2 z-40">
-                    <Counter/>
-                </div>
                 <div className="flex justify-evenly  items-center">
                     <ViewProfile text="View Profile" imagen="next" onShowDetails={onShowDetails} />
-                    <ViewProfile text="Add to Cart" imagen="cart" clase="bg-bgButtonGray border-none"/>
+                    <AddToCart text="Add to Cart" imagen="cart" clase="bg-bgButtonGray border-none" onAddToCart={onAddToCart} id={id} />
                 </div>
             </div>
         </div>
         
     )
 }
+
 
 export default Card;
 

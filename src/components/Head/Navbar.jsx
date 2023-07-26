@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useNavigate } from "react";
 import CartWidget from './NavItem/CartWidget';
 import Logo from './NavItem/Logo';
 import HamIcon from './NavItem/HamIcon';
@@ -10,7 +10,12 @@ import Download from "../Footline/Download/Download";
 
 const Navbar =()=> {
   const [isOpen, setIsOpen] = useState(false)
-  
+  const navigate = useNavigate;
+
+  const goToCart = () => {
+    navigate("/cart");
+  }
+
   const handleClick =()=>{
     setIsOpen(!isOpen)
  }
@@ -35,7 +40,7 @@ const Navbar =()=> {
           <Link to="/Contact" className="hover:text-titlePurple" onClick={closeMenu}>Contact</Link>
         </div>
         <div>
-          <a href=""  ><CartWidget text="View Cart" /></a>
+          <Link to={"/cart"}><CartWidget  text="View Cart" /></Link>
         </div>
         <hr className={`hr hidden ${isOpen && "open"}`}/>
         <div className={`hidden rrss ${isOpen && "open"}`}>

@@ -10,6 +10,7 @@ import Head from './components/Head/Navbar.jsx';
 import Landing from './Pages/Landing/Landing.jsx';
 import Footline from './components/Footline/Footline.jsx';
 import Contact from './Pages/Contact/Contact.jsx';
+import Cart from './Pages/Cart/Cart.jsx';
 
 
 
@@ -44,6 +45,7 @@ function App() {
         <Route path='/ItemListContainer'   element={<ItemListContainer />}/>
         <Route path='/Contact' element={<Contact />}/>
         <Route path='/ItemDetail/:characterId' element={<ItemDetail />}/>
+        <Route path='/cart' element={<Cart />}/>
       </Routes>
       {!isItemDetail && <Footline />}
     </div>
