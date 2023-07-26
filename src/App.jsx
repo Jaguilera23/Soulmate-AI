@@ -8,7 +8,7 @@ import Head from './components/Head/Navbar.jsx';
 import Landing from './Pages/Landing/Landing.jsx';
 import Footline from './components/Footline/Footline.jsx';
 import Contact from './Pages/contact/Contact.jsx';
-import Cart from './Pages/cart/Cart.jsx';
+import Cart from './Pages/Cart/Cart.jsx';
 
 
 
