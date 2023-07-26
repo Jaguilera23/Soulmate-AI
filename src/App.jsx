@@ -7,8 +7,10 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx';
 import Head from './components/Head/Navbar.jsx';
 import Landing from './Pages/Landing/Landing.jsx';
 import Footline from './components/Footline/Footline.jsx';
-import Contact from './Pages/Contact/Contact.jsx';
-import Cart from './Pages/Cart/Cart.jsx';
+import Contact from './Pages/contact/Contact';
+import Cart from './Pages/cart/Cart';
+
+
 
 
 
@@ -41,9 +43,9 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/About"element={<AboutUs />} />
         <Route path='/ItemListContainer'   element={<ItemListContainer />}/>
-        <Route path='/Contact' element={<Contact />}/>
+        <Route path='/Contact' element={<Contact  />}/>
         <Route path='/ItemDetail/:characterId' element={<ItemDetail />}/>
-        <Route path='/cart' element={<Cart />}/>
+        <Route path='/cart' element={<Cart  />}/>
       </Routes>
       {!isItemDetail && <Footline />}
     </div>
