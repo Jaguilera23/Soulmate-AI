@@ -35,7 +35,7 @@ const Navbar =()=> {
         <div className={`links ${isOpen ? "open" : "flex"}`}>
           <Link to="/About" className="hover:text-titlePurple" onClick={closeMenu}>About</Link>
           <Link to="/ItemListContainer" className="hover:text-titlePurple" onClick={closeMenu}>Characters</Link>
-          <Link to="/contact" className="hover:text-titlePurple" onClick={closeMenu}>Contact</Link>
+          <Link to="/Contact" className="hover:text-titlePurple" onClick={closeMenu}>Contact</Link>
         </div>
         <div>
           <Link to={"/Cart"}><CartWidget  text="View Cart" /></Link>
