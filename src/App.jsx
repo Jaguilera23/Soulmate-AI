@@ -7,8 +7,8 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx';
 import Head from './components/Head/Navbar.jsx';
 import Landing from './Pages/Landing/Landing.jsx';
 import Footline from './components/Footline/Footline.jsx';
-import Contact from './Pages/Contact/Contact';
-import Cart from './Pages/Cart/Cart';
+import Contact from './Pages/contact/Contact.jsx';
+import Cart from './Pages/cart/Cart.jsx';
 
 
 
@@ -35,7 +35,7 @@ function App() {
 
 
   return (<>
-     
+
       <ScrollToTop />  
     <div>
       <Head />  
