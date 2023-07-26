@@ -44,7 +44,7 @@ const Summary = ({imageDetail,price,name,description, selectedCharacter }) => {
                         <h1 className="clash text-subtitlePurple text-6xl pe-2">{price}<span className="text-4xl ps-1">$</span> </h1>
                         <p className="font-Inter text-xs text-subtitlePurple">Per/Month</p>
                     </div>
-                    <AddToCart text="Add to Cart" imagen="cart" clase="bg-bgButtonGray border-none" onAddToCart={() => onAddToCart(selectedCharacter.id)} />
+                    <AddToCart text="Add to Cart" imagen="cart" clase="w-[11.375rem] h-[2.5625rem] justify-center text-[0.78931rem] items-center border-subtitlePurple" onAddToCart={() => onAddToCart(selectedCharacter.id)} />
                     
                 </div>
             </section>
