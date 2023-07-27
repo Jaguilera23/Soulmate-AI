@@ -38,7 +38,7 @@ const Navbar =()=> {
           <Link to="/ContactPage" className="hover:text-titlePurple" onClick={closeMenu}>Contact</Link>
         </div>
         <div>
-          <Link to={"/CartPage"}><CartWidget  text="View Cart" /></Link>
+          <Link to={"/CartPage"}><CartWidget  text="View Cart" onClick={closeMenu}/></Link>
         </div>
         <hr className={`hr hidden ${isOpen && "open"}`}/>
         <div className={`hidden rrss ${isOpen && "open"}`}>

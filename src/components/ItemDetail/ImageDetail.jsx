@@ -1,10 +1,10 @@
-const ImageDetail = ({imageDetail}) => {
+const ImageDetail = ({imageDetail,clase}) => {
 
-    
+    const aditionalClass = `z-20 flip ${clase}`
 
     return (
         
-            <img src={imageDetail} alt="" className="z-20  flip"/>
+            <img src={imageDetail} alt="" className={aditionalClass}/>
         
     )
 }
