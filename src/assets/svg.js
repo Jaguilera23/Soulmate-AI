@@ -14,6 +14,11 @@ import gradienteSvg from './svg/gradienteDetail.svg';
 import instagram from './svg/instagram.svg';
 import facebook from './svg/facebook.svg';
 import twitter from './svg/twitter.svg';
+import visa from './svg/visa.svg';
+import master from './svg/master.svg';
+import applePay from './svg/applePay.svg';
+import paypal from './svg/paypal.svg';
+import lock from './svg/lock.svg';
 
 export default {
     'foxHub': foxHub,
@@ -32,4 +37,9 @@ export default {
     'instagram': instagram,
     'facebook': facebook,
     'twitter': twitter,
+    'visa': visa,
+    'master': master,
+    'applePay': applePay,
+    'paypal': paypal,
+    'lock': lock,
 }

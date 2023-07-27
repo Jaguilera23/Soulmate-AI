@@ -1,6 +1,8 @@
 import Counter from "../../components/Buttons/Counter";
 import { CartContext } from "../../context/cartContext";
 import { useContext} from "react";
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -8,7 +10,11 @@ import { useContext} from "react";
 
 const Cart = () => {
     const {cart, onAddToCart, onDecreaseItem,total,subtotal} = useContext(CartContext);
+    const navigate = useNavigate();
 
+    const handlePayment = () => {
+        navigate('/PaymentMethods');
+    }
  
 
     return (
@@ -84,7 +90,7 @@ const Cart = () => {
                     </span>
                     Back
                 </button>
-                <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple">
+                <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple" onClick={handlePayment}>
                     Next
                     <span className="ms-2">
                         <svg width="0.30694rem" height="0.61388rem" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
