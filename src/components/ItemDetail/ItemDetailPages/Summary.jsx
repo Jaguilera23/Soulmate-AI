@@ -17,7 +17,6 @@ const Summary = ({imageDetail,price,name,description, selectedCharacter }) => {
 
         
 
-    
   
     return(
     

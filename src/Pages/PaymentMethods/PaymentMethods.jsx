@@ -107,7 +107,7 @@ const PaymentMethods = () => {
             <div className="mt-[1.56rem] w-[34.53rem] flex justify-end">
                 <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple me-[1.19rem] "onClick={handleBack} >
                     <span className="me-2 transform rotate-180">
-                        <svg width="0.30694rem" height="0.61388rem" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <svg className="w-[0.30694rem] h-[0.61388rem]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <path d="M1 1L8 8L1 15" stroke="#CDD4F0" strokeWidth="1.403" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </span>
@@ -116,7 +116,7 @@ const PaymentMethods = () => {
                 <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple" onClick={handlePayment}>
                     Next
                     <span className="ms-2">
-                        <svg width="0.30694rem" height="0.61388rem" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <svg className="w-[0.30694rem] h-[0.61388rem]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <path d="M1 1L8 8L1 15" stroke="#CDD4F0" strokeWidth="1.403" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </span>

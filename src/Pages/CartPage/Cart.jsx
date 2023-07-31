@@ -2,6 +2,7 @@ import Counter from "../../components/Buttons/Counter";
 import { CartContext } from "../../context/cartContext";
 import { useContext} from "react";
 import { useNavigate } from "react-router-dom";
+import { firebaseServices } from "../../services/firebase";
 
 
 
@@ -12,10 +13,29 @@ const Cart = () => {
     const {cart, onAddToCart, onDecreaseItem,total,subtotal} = useContext(CartContext);
     const navigate = useNavigate();
 
-    const handlePayment = () => {
-        navigate('/PaymentMethods');
+    const onHandlerCreateCart = async () => {
+        const newCart = {
+            buyer: {
+            id: 1,
+            },
+            items: cart,
+            createdAt: new Date(),
+            total: total,
+            status: 'pending',
+        }
+
+        const cartId = await firebaseServices.createCart(newCart)
+
+        return cartId
     }
- 
+    const handlePayment = async () => {
+        const cartId = await onHandlerCreateCart();
+        navigate('/PaymentMethods', { state: { cartId: cartId.id } });
+        
+    }
+    
+  
+
 
     return (
         <div className="w-screen flex flex-col   items-center  pt-[7.56rem]">
@@ -49,7 +69,7 @@ const Cart = () => {
                         </div>
                     )):(
                         
-                        <p className="Clash text-titlePurple flex justify-center py-[10rem]">Cart is empty</p>
+                        <p key="empty-cart-message"  className="Clash text-titlePurple flex justify-center py-[10rem]">Cart is empty</p>
                         
                     )
                 }
@@ -84,7 +104,7 @@ const Cart = () => {
             <div className="mt-[1.56rem] w-[34.53rem] flex justify-end">
                 <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple me-[1.19rem] disabled:opacity-50 disabled:pointer-events-none"disabled >
                     <span className="me-2 transform rotate-180">
-                        <svg width="0.30694rem" height="0.61388rem" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <svg className="w-[0.30694rem] h-[0.61388rem]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <path d="M1 1L8 8L1 15" stroke="#CDD4F0" strokeWidth="1.403" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </span>
@@ -93,7 +113,7 @@ const Cart = () => {
                 <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple" onClick={handlePayment}>
                     Next
                     <span className="ms-2">
-                        <svg width="0.30694rem" height="0.61388rem" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <svg className="w-[0.30694rem] h-[0.61388rem]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <path d="M1 1L8 8L1 15" stroke="#CDD4F0" strokeWidth="1.403" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </span>
@@ -104,5 +124,6 @@ const Cart = () => {
     )
 
 }
+
 
 export default Cart

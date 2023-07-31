@@ -1,19 +1,45 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import svg from "../../assets/svg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { firebaseServices } from "../../services/firebase";
+import { CartContext } from "../../context/cartContext";
+import { useQuery } from "../../Hooks/useQuery";
+
+
 
 
 const CheckOut = () => {
 
+    const{cart, total, setCart} = useContext(CartContext);
+    const {state} = useLocation();
+
     const [creditCardChecked, setCreditCardChecked] = useState(true);
     const navigate = useNavigate();
 
-    const handlePayment = () => {
-        navigate('/OrderConfirmation');
-    }
     const handleBack = () => {
         navigate('/PaymentMethods');
     }
+    
+    let query = useQuery();
+
+    useEffect(() => {
+        const cartId = query.get("cartId") 
+        
+        if(query.get("cartId")) {
+            const getCart = async () => {
+                const cart = await firebaseServices.getCartById(cartId)
+                return cart
+            }
+            getCart()
+                .then((cart) => {
+                    setCart(cart.items)
+                })
+                .catch((error) => {
+                    console.log({error})
+                })
+        }
+
+    }, [query, setCart])
 
     //validation name
     const [name, setName] = useState("");
@@ -126,6 +152,43 @@ const CheckOut = () => {
     }
     };
 
+    const onHandlerOrder = async () => {
+        const newOrder = {
+            buyer: {
+                name:name,
+                email:email,
+                address:address,
+                cardNumber: cardNumber,
+                cvv: cvv,
+                postCode: postCode,
+            },
+            createAt: new Date(),
+            items:cart,
+            total:total,
+            payment:{
+                currency: 'USD',
+                method: 'CREDIT CARD',
+                type: 'CREDIT CARD' 
+            }
+        }
+
+        const orderId = await firebaseServices.createOrder(newOrder);
+        await firebaseServices.updateCart(state.cartId)
+        return {
+            orderId
+        };
+    }
+
+
+    const onSubmit = async (e) => {
+        e.preventDefault();
+        const {orderId} = await onHandlerOrder();
+        navigate('/OrderConfirmation' , { state: { orderId: orderId.id } });
+        
+    }
+
+   
+
     return (
 
         <main className="flex flex-col items-center justify-center mt-[6.56rem]">
@@ -153,7 +216,7 @@ const CheckOut = () => {
                         <img src={svg.master} alt="mastercard" />
                     </div>
                 </div>
-                <form action="" className="flex flex-col ">
+                <form action="" className="flex flex-col" onSubmit={onSubmit}>
                     <div className="flex justify-evenly items-center relative">
                         <div className="flex flex-col items-center">
                             <label htmlFor="name" className="font-Inter text-xs mb-[0.29rem] text-transparent">Name</label>
@@ -163,13 +226,13 @@ const CheckOut = () => {
                         </div>
                         <div className="flex flex-col ">
                             <label htmlFor="date" className="font-Inter text-xs mb-[0.29rem]">Expiry</label>
-                            <input type="date" id="date"  className="w-[7rem] h-[2.16rem] rounded-md text-xxs text-[#344054] bg-[#D0D5DD]  "/>
+                            <input type="date" id="date"  className="w-[7rem] h-[2.16rem] rounded-md text-xxs text-[#344054] bg-[#D0D5DD]  " />
                         </div>
                     </div>
                     <div className="flex justify-evenly items-center mt-[0.78rem]">
                         <div className="flex flex-col relative ">
-                                <label htmlFor="cardNumber" className="font-Inter text-xs text-[#344054] mb-[0.29rem]">Card Number</label>
-                                <input type="text" id="cardNumber"  placeholder="Card Number" className="w-[23.625rem] h-[2.16rem] rounded-md text-black bg-[#D0D5DD]" value={cardNumber}
+                                <label htmlFor="cardNumber" className="font-Inter text-xs text-[#344054] mb-[0.29rem]">Card number</label>
+                                <input type="text" id="cardNumber"  placeholder="Card number" className="w-[23.625rem] h-[2.16rem] rounded-md text-black bg-[#D0D5DD]" value={cardNumber}
                                 onChange={handleCardNumberChange}/>
                                 <div className="flex justify-center">
                                     {cardNumberError && <p className="text-red-500 text-xxs absolute z-50 top-16">{cardNumberError}</p>}
@@ -203,33 +266,35 @@ const CheckOut = () => {
                             {postCodeError && <p className="text-red-500 text-xxs absolute z-50 top-16">{postCodeError}</p>}
                         </div>
                     </div>
-                    
+                    <div className="w-[34.5625rem] flex justify-center mt-[4.3rem]">
+                        <img src={svg.lock} alt="lock" className="me-[0.76rem]"/>
+                        <p className="font-inter text-xs">We protect your payment information using encryption to provide bank-level security.</p>
+                    </div>
+                    <div className="mt-[1.56rem] w-[34.53rem] flex justify-end">
+                        <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple me-[1.19rem] "onClick={handleBack} >
+                            <span className="me-2 transform rotate-180">
+                                <svg className="w-[0.30694rem] h-[0.61388rem]"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                <path d="M1 1L8 8L1 15" stroke="#CDD4F0" strokeWidth="1.403" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </span>
+                            Back
+                        </button>
+                        <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple" type="submit" >
+                            CheckOut
+                            <span className="ms-2">
+                                <svg className="w-[0.30694rem] h-[0.61388rem]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                <path d="M1 1L8 8L1 15" stroke="#CDD4F0" strokeWidth="1.403" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
                 </form>
             </div>
-            <div className="w-[34.5625rem] flex justify-center mt-[1.29rem]">
-                <img src={svg.lock} alt="lock" className="me-[0.76rem]"/>
-                <p className="font-inter text-xs">We protect your payment information using encryption to provide bank-level security.</p>
-            </div>
-            <div className="mt-[1.56rem] w-[34.53rem] flex justify-end">
-                <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple me-[1.19rem] "onClick={handleBack} >
-                    <span className="me-2 transform rotate-180">
-                        <svg width="0.30694rem" height="0.61388rem" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                        <path d="M1 1L8 8L1 15" stroke="#CDD4F0" strokeWidth="1.403" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </span>
-                    Back
-                </button>
-                <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple" onClick={handlePayment}>
-                    Next
-                    <span className="ms-2">
-                        <svg width="0.30694rem" height="0.61388rem" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                        <path d="M1 1L8 8L1 15" stroke="#CDD4F0" strokeWidth="1.403" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </span>
-                </button>
-            </div>
+            
+            
         </main>
     )
 }
 
 export default CheckOut
+
