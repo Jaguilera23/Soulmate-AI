@@ -2,7 +2,7 @@ import Counter from "../../components/Buttons/Counter";
 import { CartContext } from "../../context/cartContext";
 import { useContext} from "react";
 import { useNavigate } from "react-router-dom";
-import { firebaseServices } from "../../services/firebase";
+
 
 
 
@@ -10,24 +10,10 @@ import { firebaseServices } from "../../services/firebase";
 
 
 const Cart = () => {
-    const {cart, onAddToCart, onDecreaseItem,total,subtotal} = useContext(CartContext);
+    const {cart, onAddToCart, onDecreaseItem,total,subtotal,onHandlerCreateCart} = useContext(CartContext);
     const navigate = useNavigate();
 
-    const onHandlerCreateCart = async () => {
-        const newCart = {
-            buyer: {
-            id: 1,
-            },
-            items: cart,
-            createdAt: new Date(),
-            total: total,
-            status: 'pending',
-        }
-
-        const cartId = await firebaseServices.createCart(newCart)
-
-        return cartId
-    }
+    
     const handlePayment = async () => {
         const cartId = await onHandlerCreateCart();
         navigate('/PaymentMethods', { state: { cartId: cartId.id } });

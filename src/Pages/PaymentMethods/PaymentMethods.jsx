@@ -1,21 +1,24 @@
 import { useContext,useState } from "react";
 import { CartContext } from "../../context/cartContext";
 import svg from "../../assets/svg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,useLocation } from "react-router-dom";
 
 
 
 const PaymentMethods = () => {
 
-    const {total} = useContext(CartContext)
+    const {total, onHandlerCreateCart} = useContext(CartContext)
     const [creditCardChecked, setCreditCardChecked] = useState(false);
     const [applePayChecked, setApplePayChecked] = useState(false);
     const [paypalChecked, setPaypalChecked] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
+    const cartId = location.state.cartId;
 
     const handlePayment = () => {
-        navigate('/CheckOut');
-    }
+            navigate('/CheckOut', { state: { cartId: cartId } });
+        };
+    
     const handleBack = () => {
         navigate('/CartPage');
     }

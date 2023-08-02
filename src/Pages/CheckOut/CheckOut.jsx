@@ -10,11 +10,13 @@ import { useQuery } from "../../Hooks/useQuery";
 
 const CheckOut = () => {
 
-    const{cart, total, setCart} = useContext(CartContext);
+    const{cart, total, setCart,clearCart} = useContext(CartContext);
     const {state} = useLocation();
-
     const [creditCardChecked, setCreditCardChecked] = useState(true);
     const navigate = useNavigate();
+    const [isFormValid, setIsFormValid] = useState(false);
+
+    
 
     const handleBack = () => {
         navigate('/PaymentMethods');
@@ -174,6 +176,7 @@ const CheckOut = () => {
 
         const orderId = await firebaseServices.createOrder(newOrder);
         await firebaseServices.updateCart(state.cartId)
+        clearCart();
         return {
             orderId
         };
@@ -187,7 +190,24 @@ const CheckOut = () => {
         
     }
 
-   
+    useEffect(() => {
+        setIsFormValid(
+            !nameError &&
+            !emailError &&
+            !cardNumberError &&
+            !cvvError &&
+            !addressError &&
+            !postCodeError &&
+            name.trim() !== "" &&
+            email.trim() !== "" &&
+            cardNumber.trim() !== "" &&
+            cvv.trim() !== "" &&
+            address.trim() !== "" &&
+            postCode.trim() !== ""
+        );
+    }, [nameError, emailError, cardNumberError, cvvError, addressError, postCodeError, name, email, cardNumber, cvv, address, postCode]);
+
+
 
     return (
 
@@ -279,7 +299,7 @@ const CheckOut = () => {
                             </span>
                             Back
                         </button>
-                        <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple" type="submit" >
+                        <button className={`border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple ${isFormValid ? '' : 'opacity-50 pointer-events-none'}`} type="submit" disabled={!isFormValid}>
                             CheckOut
                             <span className="ms-2">
                                 <svg className="w-[0.30694rem] h-[0.61388rem]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >

@@ -1,4 +1,6 @@
 import { createContext, useState} from "react";
+import { firebaseServices } from "../services/firebase";
+
 
 const initialState = {
     characters:[],
@@ -8,8 +10,11 @@ const initialState = {
     onDecreaseItem:()=>{},
     onAddToCart:()=>{},
     onDeleteItem:()=>{},
+    onHandlerCreateCart:()=>{},
+    clearCart:()=>{},
     total:0,
     subtotal:0,
+    
 }
 
 export const CartContext = createContext(initialState);
@@ -18,6 +23,25 @@ export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
     const [characters, setCharacters] = useState([]);
 
+    const onHandlerCreateCart = async () => {
+        const newCart = {
+            buyer: {
+            id: 1,
+            },
+            items: cart,
+            createdAt: new Date(),
+            total: total,
+            status: 'pending',
+        }
+
+        const cartId = await firebaseServices.createCart(newCart)
+
+        return cartId
+    }
+
+    const clearCart = () => {
+        setCart([]);
+      };
 
 
     const onAddToCart = (id) => {
@@ -69,7 +93,7 @@ export const CartProvider = ({children}) => {
     const total = subtotal + 2.24;
 
     return(
-        <CartContext.Provider value={{cart,setCart,onAddToCart,onDecreaseItem,onDeleteItem,total,characters,setCharacters,subtotal}}>
+        <CartContext.Provider value={{cart,setCart,onAddToCart,onDecreaseItem,onDeleteItem,total,characters,setCharacters,subtotal, onHandlerCreateCart,clearCart}}>
             {children}
         </CartContext.Provider>
     )

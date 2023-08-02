@@ -19,6 +19,7 @@ import master from './svg/master.svg';
 import applePay from './svg/applePay.svg';
 import paypal from './svg/paypal.svg';
 import lock from './svg/lock.svg';
+import check from './svg/check.svg';
 
 export default {
     'foxHub': foxHub,
@@ -42,4 +43,5 @@ export default {
     'applePay': applePay,
     'paypal': paypal,
     'lock': lock,
+    'check': check,
 }
