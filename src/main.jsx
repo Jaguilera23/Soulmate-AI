@@ -18,16 +18,20 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 
 const firebaseConfig = {
+
   apiKey: "AIzaSyCKeSGKmG2LpKyJGF4eQs61BP6I5AUJQJI",
+
   authDomain: "marketplace-coder-30de6.firebaseapp.com",
-  projectId: "maketplace-coder-30de6",
+
+  projectId: "marketplace-coder-30de6",
+
   storageBucket: "marketplace-coder-30de6.appspot.com",
+
   messagingSenderId: "49952842338",
+
   appId: "1:49952842338:web:dc76915beaf2aedaea273b"
-  
 
 };
-
 
 // Initialize Firebase
 
