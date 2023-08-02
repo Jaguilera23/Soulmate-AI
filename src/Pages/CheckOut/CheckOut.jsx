@@ -13,7 +13,7 @@ const CheckOut = () => {
     const{cart, total, setCart} = useContext(CartContext);
     const {state} = useLocation();
 
-    const [creditCardChecked, setCreditCardChecked] = useState(true);
+    const [creditCardChecked] = useState(true);
     const navigate = useNavigate();
 
     const handleBack = () => {
