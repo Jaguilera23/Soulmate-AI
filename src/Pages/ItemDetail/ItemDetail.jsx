@@ -10,10 +10,11 @@ const ItemDetail = () => {
     const { characters, loading, error } = useFetch('/characters.json');
 
 
- 
 
 
-   const selectedCharacter = characters.find((character) => character.id === characterId);
+
+
+    const selectedCharacter = characters.find((character) => character.id === characterId);
 
     return (
         <section className="">

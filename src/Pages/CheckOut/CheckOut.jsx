@@ -12,7 +12,7 @@ const CheckOut = () => {
 
     const{cart, total, setCart,clearCart} = useContext(CartContext);
     const {state} = useLocation();
-    const [creditCardChecked, setCreditCardChecked] = useState(true);
+    const [creditCardChecked] = useState(true);
     const navigate = useNavigate();
     const [isFormValid, setIsFormValid] = useState(false);
 

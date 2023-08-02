@@ -7,7 +7,7 @@ import { useNavigate,useLocation } from "react-router-dom";
 
 const PaymentMethods = () => {
 
-    const {total, onHandlerCreateCart} = useContext(CartContext)
+    const {total} = useContext(CartContext)
     const [creditCardChecked, setCreditCardChecked] = useState(false);
     const [applePayChecked, setApplePayChecked] = useState(false);
     const [paypalChecked, setPaypalChecked] = useState(false);
