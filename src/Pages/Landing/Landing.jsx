@@ -29,9 +29,9 @@ const Landing = () => {
             <div className='flex justify-center mb-24'>
                 <Characters claseContenedor="xs:w-[9rem]"/>    
             </div>
-            <div className='mb-48'>
+            <div className='mb-48 xs:hidden md:block'>
                 <h2 className='text-subtitlePurple clash xs:text-base md:text-5xl lg:text-7xl  flex justify-center mb-11 text-trustedBlue'>TRUSTED 10,000+ COMPANY</h2>
-                <ul className='flex  justify-evenly '>
+                <ul className='flex  justify-evenly ' >
                     <li>
                         <Sponsors nombre='velocity' />    
                     </li>

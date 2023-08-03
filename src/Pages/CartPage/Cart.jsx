@@ -4,11 +4,6 @@ import { useContext} from "react";
 import { useNavigate } from "react-router-dom";
 
 
-
-
-
-
-
 const Cart = () => {
     const {cart, onAddToCart, onDecreaseItem,total,subtotal,onHandlerCreateCart} = useContext(CartContext);
     const navigate = useNavigate();
@@ -20,7 +15,6 @@ const Cart = () => {
         
     }
     
-  
 
 
     return (

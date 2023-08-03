@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "firebase": "^10.1.0",
+    "flickity": "^3.0.0",
     "flowbite": "^1.7.0",
     "flowbite-react": "^0.4.11",
     "react": "^18.2.0",
