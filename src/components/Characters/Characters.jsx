@@ -7,7 +7,7 @@ import useFilters from '../../Hooks/useFilters';
 
 
 const Characters = ({claseContenedor}) => {
-
+    
     const{characters,loading,error}=useFetch('/characters.json');
 
     const {filterProducts} = useFilters();
@@ -27,4 +27,5 @@ const Characters = ({claseContenedor}) => {
 }
 
 export default Characters;
+
 
