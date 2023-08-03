@@ -29,10 +29,10 @@ const PaymentMethods = () => {
 
     return (    
         <main className="flex flex-col items-center justify-center mt-[6.56rem]">
-            <div className="w-[34.5625rem] flex justify-start">
+            <div className=" xs:w-[22.1875rem] lg:w-[34.5625rem] flex justify-start">
                 <p className="font-Inter font-medium text-sm mb-[1.63rem]">Select payment process</p>
             </div>
-            <div className="w-[34.5625rem] h-[7.8125rem] border-subtitlePurple border border-opacity-20 rounded-md flex justify-between  items-center mb-[1.62rem]">
+            <div className=" xs:w-[22.1875rem] lg:w-[34.5625rem] h-[7.8125rem] border-subtitlePurple border border-opacity-20 rounded-md flex justify-between  items-center mb-[1.62rem]">
                 <div className="ms-8 font-Inter">
                     <p className="text-base">Total</p>
                     <p className="text-xs">Including $2.24 in taxes</p>
@@ -41,7 +41,7 @@ const PaymentMethods = () => {
                     <p className="text-titlePurple clash text-4xl">${total}</p>
                 </div>
             </div>
-            <div className="w-[34.5625rem] h-[5.1875rem] border-subtitlePurple border-opacity-20 border rounded-md my-[1.62rem] flex justify-between" >
+            <div className="xs:w-[22.1875rem] lg:w-[34.5625rem] h-[5.1875rem] border-subtitlePurple border-opacity-20 border rounded-md my-[1.62rem] flex justify-between" >
                 <div>
                     <div className=" flex my-[1.59rem]">
                         <input
@@ -61,7 +61,7 @@ const PaymentMethods = () => {
                     <img src={svg.master} alt="mastercard" />
                 </div>
             </div>
-            <div className="w-[34.5625rem] h-[5.1875rem] border-subtitlePurple border-opacity-20 border rounded-md my-[1.62rem] flex justify-between" >
+            <div className="xs:w-[22.1875rem] lg:w-[34.5625rem] h-[5.1875rem] border-subtitlePurple border-opacity-20 border rounded-md my-[1.62rem] flex justify-between" >
                 <div>
                     <div className=" flex my-[1.59rem]">
                         <input
@@ -81,7 +81,7 @@ const PaymentMethods = () => {
                     <img src={svg.applePay} alt="applepay"  className="me-[0.43rem]"/>
                 </div>
             </div>
-            <div className="w-[34.5625rem] h-[5.1875rem] border-subtitlePurple border-opacity-20 border rounded-md mt-[1.62rem] flex justify-between" >
+            <div className="xs:w-[22.1875rem] lg:w-[34.5625rem] h-[5.1875rem] border-subtitlePurple border-opacity-20 border rounded-md mt-[1.62rem] flex justify-between" >
                 <div>
                     <div className=" flex my-[1.59rem]">
                         <input
@@ -103,11 +103,11 @@ const PaymentMethods = () => {
                     
                 </div>
             </div>
-            <div className="w-[34.5625rem] flex justify-center mt-[1.29rem]">
+            <div className="xs:w-[22.1875rem] lg:w-[34.5625rem] flex justify-center mt-[1.29rem]">
                 <img src={svg.lock} alt="lock" className="me-[0.76rem]"/>
                 <p className="font-inter text-xs">We protect your payment information using encryption to provide bank-level security.</p>
             </div>
-            <div className="mt-[1.56rem] w-[34.53rem] flex justify-end">
+            <div className="mt-[1.56rem] xs:w-[22.1875rem] lg:w-[34.5625rem] flex justify-end">
                 <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple me-[1.19rem] "onClick={handleBack} >
                     <span className="me-2 transform rotate-180">
                         <svg className="w-[0.30694rem] h-[0.61388rem]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >

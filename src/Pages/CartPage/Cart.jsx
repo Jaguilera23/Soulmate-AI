@@ -25,21 +25,27 @@ const Cart = () => {
 
     return (
         <div className="w-screen flex flex-col   items-center  pt-[7.56rem]">
-            <div className="w-[34.53rem] j  border rounded-md border-borderCard  ">
+            <div className="xs:w-[22.1875rem] lg:w-[34.53rem] j  border rounded-md border-borderCard  ">
                 {cart?.length > 0 ? cart.map((character) => (
                         <div key={character.id} className="">
-                            <div className="flex justify-between py-[2rem] ps-[1.67rem] pe-[2.56rem]">
+                            <div className="xs:flex-col lg:flex-row flex justify-between py-[2rem] ps-[1.67rem] pe-[2.56rem]">
                                 <div className="flex">
-                                    <img src={character.imageHome} alt={character.name} className="h-[4.97rem] w-[4.97rem]"/>
-                                    <div className="flex-col ms-[1.21rem]">
+                                    <img src={character.imageHome} alt={character.name} className="lg:h-[4.97rem] lg:w-[4.97rem] xs:w-[10.61031rem] xs:h-[10.61031rem]"/>
+                                    <div className="flex-col ms-[1.21rem]  xs:h-[2rem]">
                                         <h3 className="text-titlePurple text-[2rem] clash-regular">{character.name}</h3>
-                                        <p>${character.price}</p>
+                                        <p className="font-Inter text-xs text-subtitlePurple lg:mt-[0rem] xs:mt-[1.12rem]">${character.price} per/month </p>
+                                        <div className=" xs:block lg:hidden mt-[0.88rem] ">
+                                            <p className="mb-[0.75rem] font-Inter text-xxs font-normal text-subtitlePurple">Qty per months: {character.quantity}</p>
+                                            <Counter
+                                                initialQuantity={character.quantity}
+                                                onAddToCart={(quantity) => onAddToCart(character.id, quantity)}
+                                                onDecreaseItem={(newQuantity) => onDecreaseItem(character.id, newQuantity)}/> 
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="flex justify-between items-center">
-                                    
-                                    <div className="">
-                                        <p className="mb-[0.75rem] font-Inter text-xs font-normal">Qty per months: {character.quantity}</p>
+                                <div className="flex justify-between items-center xs:ms-[11rem] lg:ms-[0] ">
+                                    <div className="xs:hidden lg:block">
+                                        <p className="mb-[0.75rem] font-Inter text-xs font-normal text-subtitlePurple">Qty per months: {character.quantity}</p>
                                         <Counter
                                             initialQuantity={character.quantity}
                                             onAddToCart={(quantity) => onAddToCart(character.id, quantity)}
@@ -87,7 +93,7 @@ const Cart = () => {
                 </div>
                 )}
             </div>
-            <div className="mt-[1.56rem] w-[34.53rem] flex justify-end">
+            <div className="mt-[1.56rem] xs:w-[22.1875rem] lg:w-[34.53rem] flex justify-end">
                 <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple me-[1.19rem] disabled:opacity-50 disabled:pointer-events-none"disabled >
                     <span className="me-2 transform rotate-180">
                         <svg className="w-[0.30694rem] h-[0.61388rem]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >

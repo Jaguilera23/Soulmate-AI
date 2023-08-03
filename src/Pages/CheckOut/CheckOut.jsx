@@ -212,11 +212,11 @@ const CheckOut = () => {
     return (
 
         <main className="flex flex-col items-center justify-center mt-[6.56rem]">
-            <div className="w-[34.5625rem] flex justify-start">
+            <div className="xs:w-[22.1875rem] lg:w-[34.5625rem] flex justify-start">
                 <p className="font-Inter font-medium text-sm mb-[1.63rem]">Select payment process</p>
             </div>
-            <div className="w-[34.5625rem] h-[28.4375rem] border border-subtitlePurple border-opacity-20 rounded-md ">
-                <div className="w-[34.5625rem] h-[5.1875rem] my-[1.62rem] flex justify-between" >
+            <div className="xs:w-[22.1875rem] lg:w-[34.5625rem] h-[28.4375rem] border border-subtitlePurple border-opacity-20 rounded-md ">
+                <div className="xs:w-[22.1875rem] lg:w-[34.5625rem] h-[5.1875rem] my-[1.62rem] flex justify-between" >
                     <div>
                         <div className=" flex my-[1.59rem]">
                             <input
@@ -240,7 +240,7 @@ const CheckOut = () => {
                     <div className="flex justify-evenly items-center relative">
                         <div className="flex flex-col items-center">
                             <label htmlFor="name" className="font-Inter text-xs mb-[0.29rem] text-transparent">Name</label>
-                            <input type="text" id="name" placeholder="Jose Perez" className="w-[23.625rem] h-[2.16rem] rounded-md text-black bg-[#D0D5DD]"value={name}
+                            <input type="text" id="name" placeholder="Jose Perez" className=" xs:w-[10.375rem] lg:xs:w-[10.375rem] lg:w-[23.625rem] h-[2.16rem] rounded-md text-black bg-[#D0D5DD]"value={name}
                                 onChange={handleNameChange}/>
                             {nameError && <p className="text-red-500 text-xxs absolute z-50 top-16 ">{nameError}</p>}
                         </div>
@@ -252,7 +252,7 @@ const CheckOut = () => {
                     <div className="flex justify-evenly items-center mt-[0.78rem]">
                         <div className="flex flex-col relative ">
                                 <label htmlFor="cardNumber" className="font-Inter text-xs text-[#344054] mb-[0.29rem]">Card number</label>
-                                <input type="text" id="cardNumber"  placeholder="Card number" className="w-[23.625rem] h-[2.16rem] rounded-md text-black bg-[#D0D5DD]" value={cardNumber}
+                                <input type="text" id="cardNumber"  placeholder="Card number" className="xs:w-[10.375rem] lg:w-[23.625rem] h-[2.16rem] rounded-md text-black bg-[#D0D5DD]" value={cardNumber}
                                 onChange={handleCardNumberChange}/>
                                 <div className="flex justify-center">
                                     {cardNumberError && <p className="text-red-500 text-xxs absolute z-50 top-16">{cardNumberError}</p>}
@@ -266,15 +266,15 @@ const CheckOut = () => {
                         </div>
                     </div>
                     <div className="flex flex-col items-center  mt-[1.06rem] relative">
-                            <label htmlFor="email" className="font-Inter text-xs mb-[0.29rem] flex justify-start w-[32.125rem]">Email</label>
-                            <input type="email" id="email" placeholder="correo@domain.com" className="w-[32.125rem] h-[2.16rem] rounded-md text-black bg-[#D0D5DD]" value={email}
+                            <label htmlFor="email" className="font-Inter text-xs mb-[0.29rem] flex justify-start xs:w-[18.8125rem] lg:w-[32.125rem]">Email</label>
+                            <input type="email" id="email" placeholder="correo@domain.com" className="xs:w-[18.8125rem] lg:w-[32.125rem] h-[2.16rem] rounded-md text-black bg-[#D0D5DD]" value={email}
                                 onChange={handleEmailChange}/>
                             {emailError && <p className="text-red-500 text-xxs absolute z-50 top-16">{emailError}</p>}
                     </div>
                     <div className="flex justify-evenly items-center mt-[0.78rem] ">
                         <div className="flex flex-col relative">
                                 <label htmlFor="address" className="font-Inter text-xs  mb-[0.29rem]">Address</label>
-                                <input type="text" id="address" placeholder="Address here" className="w-[23.625rem] h-[2.16rem] rounded-md text-black bg-[#D0D5DD]" value={address}
+                                <input type="text" id="address" placeholder="Address here" className="xs:w-[10.375rem] lg:w-[23.625rem] h-[2.16rem] rounded-md text-black bg-[#D0D5DD]" value={address}
                                 onChange={handleAddressChange}/>
                                 {addressError && <p className="text-red-500 text-xxs z-50 absolute top-16">{addressError}</p>}
                         </div>
@@ -286,11 +286,11 @@ const CheckOut = () => {
                             {postCodeError && <p className="text-red-500 text-xxs absolute z-50 top-16">{postCodeError}</p>}
                         </div>
                     </div>
-                    <div className="w-[34.5625rem] flex justify-center mt-[4.3rem]">
+                    <div className="xs:w-[22.1875rem] lg:w-[34.5625rem] flex justify-center mt-[4.3rem]">
                         <img src={svg.lock} alt="lock" className="me-[0.76rem]"/>
                         <p className="font-inter text-xs">We protect your payment information using encryption to provide bank-level security.</p>
                     </div>
-                    <div className="mt-[1.56rem] w-[34.53rem] flex justify-end">
+                    <div className="mt-[1.56rem] xs:w-[22.1875rem] lg:w-[34.5625rem] flex justify-end">
                         <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple me-[1.19rem] "onClick={handleBack} >
                             <span className="me-2 transform rotate-180">
                                 <svg className="w-[0.30694rem] h-[0.61388rem]"  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
