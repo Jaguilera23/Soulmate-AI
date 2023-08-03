@@ -1,8 +1,6 @@
 ![logo](https://github.com/Jaguilera23/Soulmate-AI/blob/main/src/assets/svg/logo.svg)
 
 
-# Soulmate AI
-
 This is the final project I completed for the reactd course at [CoderHouse](https://www.coderhouse.es/?utm_term=coderhouse&utm_campaign=0&utm_source=google_search_brand&utm_medium=cpc&gclid=Cj0KCQjw8qmhBhClARIsANAtbofTiZZCHzIytoPyUPvCFmzL2ODsF1gAwTUmOu1itlChMJlrZy3MPzIaAhnTEALw_wcB). is an web app multi page for an e-commerce, which includes a home, list of products, contact, cart, payment methods, checkout and confirmation order.
 
 ## Features
