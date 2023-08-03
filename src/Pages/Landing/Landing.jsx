@@ -11,6 +11,7 @@ import TryNow from '../../components/Buttons/TryNow'
 
 
 const Landing = () => {
+
     return (
         <section>
             <div className='flex justify-center  w-screen xs:mt-20 md:mt-40 mb-[70px]'>

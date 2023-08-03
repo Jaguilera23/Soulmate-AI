@@ -19,17 +19,17 @@ import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyCKeSGKmG2LpKyJGF4eQs61BP6I5AUJQJI",
+  apiKey: import.meta.env.VITE_APP_API_KEY,
 
-  authDomain: "marketplace-coder-30de6.firebaseapp.com",
+  authDomain: import.meta.env.VITE_APP_AUTH_DOMAIN,
 
-  projectId: "marketplace-coder-30de6",
+  projectId: import.meta.env.VITE_APP_PROJECT_ID,
 
-  storageBucket: "marketplace-coder-30de6.appspot.com",
+  storageBucket: import.meta.env.VITE_APP_STORAGE_BUCKET,
 
-  messagingSenderId: "49952842338",
+  messagingSenderId: import.meta.env.VITE_APP_MESSAGING_SENDER_ID,
 
-  appId: "1:49952842338:web:dc76915beaf2aedaea273b"
+  appId: import.meta.env.VITE_APP_APP_ID
 
 };
 
