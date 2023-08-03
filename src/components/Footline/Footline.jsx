@@ -10,7 +10,7 @@ const Footline = () => {
 
     return(
 
-        <div className="font-Inter  xs:ps-4 md:ps-0 text-subtitlePurple xs:mb-20  flex md:justify-between mt-[14.44rem] md:mx-24 xs:flex-col   md:flex-col lg:flex-row md:w-10/12  lg:mx-24   xs:w-[22rem]">
+        <div className="font-Inter  xs:ps-4 md:ps-0 text-subtitlePurple xs:mb-20  flex md:justify-between mt-[14.44rem] md:mx-24 xs:flex-col   md:flex-col lg:flex-row md:w-10/12  lg:mx-24   xs:w-[22rem] pb-[5rem]">
             <div>
                 <Link to="/" ><Logo /></Link>
                 <p className="w-52 mt-5 ">Create and nurture meaningful connections</p>
