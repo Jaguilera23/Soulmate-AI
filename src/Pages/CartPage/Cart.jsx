@@ -32,7 +32,7 @@ const Cart = () => {
                                             <p className="mb-[0.75rem] font-Inter text-xxs font-normal text-subtitlePurple">Qty per months: {character.quantity}</p>
                                             <Counter
                                                 initialQuantity={character.quantity}
-                                                onAddToCart={(quantity) => onAddToCart(character.id, quantity)}
+                                                onAddToCart={(quantity) => onAddToCart(character, quantity)}
                                                 onDecreaseItem={(newQuantity) => onDecreaseItem(character.id, newQuantity)}/> 
                                         </div>
                                     </div>
@@ -42,7 +42,7 @@ const Cart = () => {
                                         <p className="mb-[0.75rem] font-Inter text-xs font-normal text-subtitlePurple">Qty per months: {character.quantity}</p>
                                         <Counter
                                             initialQuantity={character.quantity}
-                                            onAddToCart={(quantity) => onAddToCart(character.id, quantity)}
+                                            onAddToCart={(quantity) => onAddToCart(character, quantity)}
                                             onDecreaseItem={(newQuantity) => onDecreaseItem(character.id, newQuantity)}
                                         /> 
                                     </div>
