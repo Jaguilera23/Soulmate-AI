@@ -41,29 +41,28 @@ export const CartProvider = ({children}) => {
 
     const clearCart = () => {
         setCart([]);
-      };
+    };
 
 
-    const onAddToCart = (id) => {
-        const item = characters.find((character) => character.id === id);
-        if(cart?.length === 0){
-            setCart([{...item, quantity: 1}])
-        }
-        if(cart?.length > 0 && !cart?.find((character) => character.id === id)){
-            setCart([...cart, {...item, quantity: 1}])
-        }
-        if(cart?.length > 0 && cart?.find((character) => character.id === id)) {
+    const onAddToCart = (selectedCharacter) => {
+        const item = cart.find((character) => character.id === selectedCharacter.id);
+        if (!item) {
+            setCart([...cart, { ...selectedCharacter, quantity: 1 }]);
+        } else {
             setCart((currentCart) => {
-                return currentCart.map((character) => {
-                    if(character.id === id) {
-                        return { ...character, quantity: character.quantity + 1 }
-                    } else {
-                        return character
-                    }
-                })
+            return currentCart.map((character) => {
+                if (character.id === selectedCharacter.id) {
+                return { ...character, quantity: character.quantity + 1 };
+            } else {
+                return character;
+                }
             });
+        });
         }
-    }
+    };
+
+
+
     const onDecreaseItem = (id, newQuantity) => {
         // Buscar el personaje en el carrito
         const existingCharacter = cart.find((character) => character.id === id);
