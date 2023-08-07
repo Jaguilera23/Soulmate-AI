@@ -15,6 +15,10 @@ const Cart = () => {
         
     }
     
+    const backToHome = () => {
+        navigate('/');
+    }
+    
 
 
     return (
@@ -88,13 +92,13 @@ const Cart = () => {
                 )}
             </div>
             <div className="mt-[1.56rem] xs:w-[22.1875rem] lg:w-[34.53rem] flex justify-end">
-                <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple me-[1.19rem] disabled:opacity-50 disabled:pointer-events-none"disabled >
+                <button className="border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple me-[1.19rem] " onClick={backToHome} >
                     <span className="me-2 transform rotate-180">
                         <svg className="w-[0.30694rem] h-[0.61388rem]" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <path d="M1 1L8 8L1 15" stroke="#CDD4F0" strokeWidth="1.403" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </span>
-                    Back
+                    Back to Home
                 </button>
                 <button className={`border rounded-full w-[9.75rem] h-[2.5625rem] flex items-center justify-center text-subtitlePurple font-Inter text-xs border-subtitlePurple ${
                         cart.length === 0 ? "opacity-50" : ""
